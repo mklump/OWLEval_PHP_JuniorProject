@@ -1,0 +1,292 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0143)http://e21.email.excite.com/msg_read.php?m=26&s=1&d=1&mid=17&pr=1&ArdSI=f366c4def6265cc064320e0bae7fb112&ArdSI=f366c4def6265cc064320e0bae7fb112 -->
+<HTML><HEAD><TITLE>CST326 Message List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- INSERT META JUNK -->
+<STYLE type=text/css>UNKNOWN {
+	SCROLLBAR-BASE-COLOR: #6699cc
+}
+.navOn {
+	BORDER-RIGHT: #6699cc 2px solid; BORDER-TOP: #487bae 3px solid; BORDER-LEFT: #487bae 3px solid; BORDER-BOTTOM: #6699cc 2px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOnHglt {
+	BORDER-RIGHT: #487bae 3px solid; BORDER-TOP: #84b7ea 2px solid; BORDER-LEFT: #84b7ea 2px solid; BORDER-BOTTOM: #487bae 3px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOff {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-TOP: #cecece 3px solid; BORDER-LEFT: #cecece 3px solid; BORDER-BOTTOM: #e2e2e2 2px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.navOffHglt {
+	BORDER-RIGHT: #cecece 3px solid; BORDER-TOP: #f6f6f6 2px solid; BORDER-LEFT: #f6f6f6 2px solid; BORDER-BOTTOM: #cecece 3px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.folLst {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #6699cc; text-decoratation: none
+}
+.folLstHover {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #75a8db
+}
+.btnDsp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.txtDsp {
+	FONT-SIZE: 12px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.msgBxHdr {
+	BORDER-RIGHT: #e2e2e2 2px solid
+}
+.msgBxBrdr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.msgBxBdy {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-BOTTOM: #e2e2e2 3px solid
+}
+.chkBxSel {
+	BORDER-BOTTOM: #6699cc 1px solid; BACKGROUND-COLOR: #7aade0
+}
+.chkBxDesel {
+	BORDER-BOTTOM: #e2e2e2 1px solid
+}
+.vertSep {
+	BORDER-LEFT: #6699cc 1px solid
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=26&s=1&d=1&mid=17&ca=" + document.msg_list.ca.value + "&ArdSI=f366c4def6265cc064320e0bae7fb112";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2734.1600" name=GENERATOR></HEAD>
+<BODY vLink=#000066 aLink=#ff0000 link=#000066 leftMargin=3 topMargin=3 
+marginwidth="3" marginheight="3"><BASEFONT face=geneva,arial>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM name=msg_list action="" method=post><INPUT type=hidden 
+  value=f366c4def6265cc064320e0bae7fb112 name=ArdSI> <INPUT type=hidden value=4 
+  name=ca></FORM>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A href="javascript:window.close();"><FONT 
+            face=geneva,arial size=1>[ Close This Window 
+        ]</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=2 src="Jo Cox WebREG coordinator_files/spacer.gif" width=1 
+      border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=16 
+            hspace=10 src="Jo Cox WebREG coordinator_files/msg_flagged_no.gif" 
+            width=14 align=absMiddle border=0> Message is not flagged. [ <A 
+            onclick="chgSte('sflg'); return false;" 
+            href="http://e21.email.excite.com/msg_read.php?ArdSI=f366c4def6265cc064320e0bae7fb112"><FONT 
+            color=black>Flag for Follow Up</FONT></A> 
+      ]</FONT></TD></TR></TBODY></TABLE><IMG height=2 
+      src="Jo Cox WebREG coordinator_files/spacer.gif" width=1 border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Date:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Wed, 21 
+            Jan 2004 13:40:52 -0800</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>From:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Joemae 
+            Cox &lt;coxj@oit.edu&gt;<BR><FONT size=1>[ <A 
+            href="http://e21.email.excite.com/abook.php?a=0&amp;w=0&amp;msg=1&amp;m=26&amp;mid=17&amp;ArdSI=f366c4def6265cc064320e0bae7fb112&amp;ArdSI=f366c4def6265cc064320e0bae7fb112"><FONT 
+            color=#0000ff>Add to Address Book</FONT></A> | <A 
+            onclick="bsThis('b', 'coxj@oit.edu'); return false;" 
+            href="http://e21.email.excite.com/msg_read.php?ArdSI=f366c4def6265cc064320e0bae7fb112"><FONT 
+            color=#0000ff>Block Address</FONT></A> | <A 
+            onclick="rSpam(); return false;" 
+            href="http://e21.email.excite.com/msg_read.php?ArdSI=f366c4def6265cc064320e0bae7fb112"><FONT 
+            color=#0000ff>Report as Spam</FONT></A> ]</FONT></FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>To:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black 
+            size=2>&lt;mklump@comcast.net&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Cc:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Lonnie 
+            Bradshaw &lt;bradshal@oit.edu&gt;, &lt;larrycbell@excite.com&gt;, 
+            &lt;mike@culbertson.info&gt;, &lt;gdiviney@comcast.net&gt;, 
+            &lt;robertsg@oit.edu&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Subject:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>CST 326 
+            Junior Project</FONT></TD></TR></TBODY></TABLE><FONT 
+      size=1><BR></FONT></FONT></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD width="100%"><FONT size=2>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2>Hello, Matthew.&nbsp; I am 
+                  forwarding your email request to OIT's ITSdirector to 
+                  address.&nbsp; Our ITS director is Lonnie Bradshaw.&nbsp; 
+                  Youwill hear from him soon concerning your request.&nbsp; Best 
+                  of luck withyour Junior Project.&nbsp; Jo Cox, WebREG 
+                  coordinator<BR><BR><BR>
+                  <BLOCKQUOTE class=cite cite="" type="cite">From: "Matthew 
+                    Klump"&lt;mklump@comcast.net&gt;<BR>To: 
+                    &lt;webreg@oit.edu&gt;<BR>Cc: &lt;larrycbell@excite.com&gt;, 
+                    &lt;mike@culbertson.info&gt;,&lt;gdiviney@comcast.net&gt;,<BR>&nbsp;&nbsp; 
+                    &lt;robertsg@oit.edu&gt;<BR>Subject: *****SPAM***** CST 326 
+                    Junior Project<BR>Date: Tue, 20 Jan 2004 21:38:01 
+                    -0800<BR>X-Spam-Flag: YES<BR>X-Spam-Status: Yes, hits=5.0 
+                    required=5.0<BR><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>tests=FORGED_MUA_OUTLOOK,HTML_70_80,HTML_MESSAGE,<BR><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MISSING_OUTLOOK_NAME,MSG_ID_ADDED_BY_MTA_2<BR><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>version=2.50<BR>X-Spam-Level: 
+                    *****<BR>X-Spam-Checker-Version: SpamAssassin 2.50 
+                    1.173-2003-02-20-exp<BR><BR>This mail is probably 
+                    spam.&nbsp; The original message has beenattached<BR>along 
+                    with this report, so you can recognize or block 
+                    similarunwanted<BR>mail in future.&nbsp; See<A 
+                    href="http://spamassassin.org/tag/" target=_blank 
+                    eudora="autourl"><FONT 
+                    color=#0033cc>http://spamassassin.org/tag/</FONT></A>for 
+                    more details.<BR><BR>Content preview:&nbsp; Dear webreg 
+                    master: My name is Matthew Klump of CST<BR>&nbsp; 326p 
+                    Junior Project, and I am now engaged in a project that seeks 
+                    to<BR>&nbsp; write a web application for OIT Portland's 
+                    course evaluation paper<BR>&nbsp; based system. [...] 
+                    <BR><BR>Content analysis details:&nbsp;&nbsp; (5.00 points, 
+                    5 
+                    required)<BR>HTML_70_80&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    (0.4 points)&nbsp; BODY: Message is 70% to 80% 
+                    HTML<BR>HTML_MESSAGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    (0.1 points)&nbsp; BODY: HTML included in 
+                    message<BR>MSG_ID_ADDED_BY_MTA_2 (0.3 points)&nbsp; 
+                    'Message-Id' was added by a relay (2)<BR>FORGED_MUA_OUTLOOK 
+                    (3.3 points)&nbsp; Forged mail pretending to be from MS 
+                    Outlook<BR>MISSING_OUTLOOK_NAME (0.9 points)&nbsp; Message 
+                    looks like Outlook, but isn't<BR><BR>The original message 
+                    did not contain plain text, and may be unsafe to<BR>open 
+                    with some email clients; in particular, it may contain a 
+                    virus,<BR>or confirm that your address can receive 
+                    spam.&nbsp; If you wish to view<BR>it, it may be safer to 
+                    save it to a file and open it with an 
+                    editor.<BR><BR>Return-Path: 
+                    &lt;mklump@comcast.net&gt;<BR>Received: from 
+                    sccrmhc11.comcast.net (sccrmhc11.comcast.net 
+                    [204.127.202.55])<BR><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>by 
+                    snoopy.oit.edu (8.12.9/8.12.9/OIT-4.0) with ESMTP id 
+                    i0L5cVEa015535;<BR><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>Tue, 
+                    20 Jan 2004 21:38:32 -0800<BR>Message-Id: 
+                    &lt;200401210538.i0L5cVEa015535@snoopy.oit.edu&gt;<BR>Received: 
+                    from mattsmachine 
+                    (12-206-24-229.client.attbi.com[12.206.24.229])<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    by comcast.net (sccrmhc11) with 
+                    SMTP<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    id 
+                    &lt;2004012105382501100lrnf0e&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    (Authid: 
+                    mklump);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Wed, 21 Jan 2004 05:38:25 +0000<BR>Reply-To: 
+                    &lt;mklump@comcast.net&gt;<BR>From: "Matthew Klump" 
+                    &lt;mklump@comcast.net&gt;<BR>To: 
+                    &lt;webreg@oit.edu&gt;<BR>Cc: &lt;larrycbell@excite.com&gt;, 
+                    &lt;mike@culbertson.info&gt;, 
+                    &lt;gdiviney@comcast.net&gt;,<BR>&nbsp;&nbsp; 
+                    &lt;robertsg@oit.edu&gt;<BR>Subject: CST 326 Junior 
+                    Project<BR>Date: Tue, 20 Jan 2004 21:38:01 
+                    -0800<BR>MIME-Version: 1.0<BR>Content-Type: 
+                    multipart/alternative;<BR><X-TAB>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</X-TAB>boundary="----=_NextPart_000_000A_01C3DF9D.AEF09DD0"<BR>X-Mailer: 
+                    Microsoft Office Outlook, Build 11.0.5329<BR>X-MimeOLE: 
+                    Produced By Microsoft MimeOLE 
+                    V6.00.2800.1165<BR>Thread-Index: 
+                    AcPf4LoHLUvwoiW7Symcg8G3lW+06w==<BR><BR><FONT face=arial 
+                    size=2>Dear webreg master:<BR></FONT><BR><FONT face=arial 
+                    size=2>My name is Matthew Klump of CST 326p Junior Project, 
+                    and I am now engaged in a project that seeks to write a web 
+                    application for OIT Portland s course evaluation paper based 
+                    system.<BR></FONT><BR><FONT face=arial size=2>My other 
+                    project colleagues 
+                    are:<BR></FONT><BR>Larry<BR><BR>Bell<BR><BR><A 
+                    href="mailto:larrycbell@excite.com" target=_blank><FONT 
+                    color=#0033cc>larrycbell@excite.com</FONT></A><BR><BR>Mike<BR><BR>Culbertson 
+                    <BR><BR><A href="mailto:mike@culbertson.info" 
+                    target=_blank><FONT 
+                    color=#0033cc>mike@culbertson.info</FONT></A> 
+                    <BR><BR>Glenn<BR><BR>Diviney <BR><BR><A 
+                    href="mailto:gdiviney@comcast.net" target=_blank><FONT 
+                    color=#0033cc>gdiviney@comcast.net</FONT></A> 
+                    <BR><BR>and<BR><BR>&nbsp;<BR><BR>&nbsp;<BR><BR>Gary<BR><BR>Roberts<BR><BR><A 
+                    href="mailto:robertsg@oit.edu" target=_blank><FONT 
+                    color=#0033cc>robertsg@oit.edu</FONT></A> <BR><BR><FONT 
+                    face=arial size=2>Our question is this, without infringing 
+                    on the confidentiality of OIT s course registration system, 
+                    is there anyone we can talk to about writing a server-side 
+                    course evaluation application for use with 
+                    banweb.ous.edu/oitprd/owa for the purpose of doing course 
+                    evaluations directly online instead of turning in forms at 
+                    the end of each term?<BR></FONT><BR><FONT face=arial 
+                    size=2>&nbsp;<BR></FONT><BR><FONT face=arial size=2>Any help 
+                    available would be greatly appreciated.<BR></FONT><BR><FONT 
+                    face=arial size=2>Thank you much for 
+                    time,<BR></FONT><BR><FONT face=arial size=2>-Course_Eval 
+                    project team</FONT></BLOCKQUOTE><BR><BR><BR><X-SIGSEP>
+                  <P></X-SIGSEP>__________________________<BR>Joemae "Jo" B. Cox 
+                  (<A href="mailto:coxj@oit.edu" target=_blank 
+                  eudora="autourl"><FONT 
+                  color=#0033cc>mailto:coxj@oit.edu</FONT></A>)<BR>Oregon 
+                  Institute of Technology<BR>Distance Education<BR>Voice 
+                  (541)885-1174 Fax (541)885-1687
+                  <P></FONT></P></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<FORM name=msg_action action=msg_proc.php method=post><INPUT type=hidden 
+value=f366c4def6265cc064320e0bae7fb112 name=ArdSI> <INPUT type=hidden 
+value=f366c4def6265cc064320e0bae7fb112 name=ArdSI> <INPUT type=hidden name=act> 
+<INPUT type=hidden name=url> <INPUT type=hidden value=26|1|1 name=m_back> <INPUT 
+type=hidden name=m_to> <INPUT type=hidden value=17 name=mid> <INPUT type=hidden 
+name=indBS> <INPUT type=hidden name=pg> </FORM></BASEFONT></BODY></HTML>

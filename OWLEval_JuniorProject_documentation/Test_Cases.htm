@@ -1,0 +1,261 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Blues Alpha Release Test Cases Page</title>
+</head>
+
+<body background=http://nelson.capital.ous.edu/~blues/dna_bkgd.gif>
+
+<!---- table setup, title, and header ------->
+
+  <center>
+  <table border="0" cellpadding="0" cellspacing="8" width=100% height="815">
+    <tr>
+      <td align="right" valign="top" width=20% bgcolor="#FFFFFF" height="91">
+	<img border="0" src="http://nelson.capital.ous.edu/~blues/oitlogo.gif" align="top" width="173" height="121"></td>
+      <td width="10" height="91">&nbsp;</td>
+      <td valign="middle" width=80% height="91" align="center"><font size="5">
+        Software Engineering Design and Implementation<br>
+        Blue Team</font></td>
+    </tr>
+
+<!---- left column links ------->
+    <tr>
+      <td valign="top" width=10% height="708"><font size="2"><strong>Software Engineering Technology</strong></font>
+<br><br>
+<a href=http://nelson.capital.ous.edu/~blues/main_page.html>Blues Home Page</a><br>
+
+</td>
+      <td width="10" height="708">&nbsp;</td>
+      <td valign="top" width=90% height="708">
+        <h1>Test Cases</h1>
+        <p>Use the following URL to check the status of the database as you
+        perform the test cases below <a href="http://www.culbertson.info/blues/glenn/show_db.php">http://www.culbertson.info/blues/glenn/show_db.php</a>.&nbsp;</p>
+        <h2>
+
+<!---- beginning of body text ------->Non-Student Login<br>Maps to Requirments 1, 2, 6, 7, and 8
+
+
+        </h2>
+        <ol>
+          <li>Go to URL <a href="http://www.culbertson.info/blues/gwr/admin_logon.php">http://www.culbertson.info/blues/gwr/admin_logon.php</a>
+            and login with user name guest and password guest. Any other user names
+            (except for the blues team logons) or passwords
+            will not work.</li>
+        </ol>
+        <h2>Create or Add Questions to the Evaluation<br>Maps to Requirments 1, 2, 5.2, 7, and 8</h2>
+        <ol>
+          <li>From the MENU click on the <b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Add/Remove</span> Question</b> button.</li>
+          <li>Select the CRN that you want to view the results for. It might
+            already be selected (showing in the selection box).</li>
+          <li>Click the <b>Augment</b> button.</li>
+          <li>Type in a question you want the students in your class to answer
+            in the box and click the <b>Save All Changes</b> button.</li>
+          <li>You will see a message at the bottom that the changes were
+            successful.</li>
+          <li>The question you just entered can be modified by typing or it can
+            be removed from the system by clicking the <b>Remove</b> button.</li>
+          <li>You may enter a new question if desired in the bottom box.</li>
+        </ol>
+        <h2>Create and Print Evaluation Keys for Student Login<br>Maps to Requirments 1, 2, 3.1, 3.2, 7, and 8</h2>
+        <ol>
+          <li>From the MENU click on the <b>Create</b> <b>Evaluation </b> button.</li>
+          <li>Click on the <b>Create</b> <b> Keys</b> button and the Eval
+            Management page will be displayed.</li>
+          <li>Select the name <b>guest</b> from the <b>Instructor Name</b> field.</li>
+          <li>Enter a five digit number into the <b>CRN</b> field. Any other
+            number of digits or any non numeric character will fail.</li>
+          <li>Enter a positive non-zero number into the <b>Number of students in
+            the course</b> field. Any negative number or any non numeric
+            character will fail.</li>
+          <li>Enter a <a href="http://www.gnu.org/software/tar/manual/html_chapter/tar_7.html">Valid
+            date and time format</a> into the <b>When do you want the evaluation
+            to start?</b> field. Any invalid date or time or a date and time
+            before now will fail. You can use the word now if you want.</li>
+          <li>Enter a <a href="http://www.gnu.org/software/tar/manual/html_chapter/tar_7.html">Valid
+            date and time format</a> into the <b>When do you want the evaluation
+            to end?</b> field. Any invalid date or time will fail. If the end
+            date and time is not after the start date and time it will fail. You
+            can use the word tomorrow if you want.</li>
+          <li>Click on the <b>Create Keys</b> button.</li>
+          <li>If an error was made it will be displayed. Click on the <b>Back</b>
+            button to go back and enter the information correctly.</li>
+          <li>When the correct information is entered the keys will be created,
+            entered into the database, and displayed on the web page. Use the following URL to check the status of the database
+            <a href="http://www.culbertson.info/blues/glenn/show_db.php">http://www.culbertson.info/blues/glenn/show_db.php</a>.
+            This will show the student keys that were just generated under the <b>Student
+            Keys</b> section for use below. These keys
+            will now allow the student to log in.</li>
+          <li>There will be three buttons displayed;&nbsp;<b>Print</b> <b> keys,
+            Delete keys, </b>and <b>  Back </b> buttons.&nbsp;</li>
+          <li>Click on the <b>Print</b> <b> keys </b>button.&nbsp;
+        <ul>
+          <li>The print dialog box will automatically open.&nbsp;</li>
+          <li>Move the print dialog box out of the way as needed so you can read
+            the directions at the top of the web page by clicking the top bar
+            and dragging it to the desired location.</li>
+          <li>Read the top of the web page and set up the font and margins as
+            specified.</li>
+          <li>From the print dialog box select a printer then click Print.</li>
+          <li>Use the browsers back button (<b><u>not</u></b> the one at the
+            bottom of the page) to go back to the previous page (Create Keys
+            Part 2) so you can test the other two buttons later.</li>
+        </ul>
+          </li>
+        </ol>
+        <h2>Student Login Page<br>Maps to Requirments 1, 2, 3.1 to 3.5, 7, and 8</h2>
+        <ol>
+          <li>Open a new browser window then go to URL <a href="http://www.culbertson.info/blues/glenn/student_login.php">http://www.culbertson.info/blues/glenn/student_login.php</a></li>
+          <li> Page should load with all images and controls in tact.
+        Cursor<br>
+        should be defaulted to key text-box.</li>
+          <li>Login with a key that was
+            generated above. If you experience any problems with the newly
+            created key you may use the word <b>apple</b> as a key. Any other key will not work.
+            <ol type="a">
+              <li>Entering a Null key will show an error for no entry and the evaluation
+                will not be displayed.</li>
+              <li>Entering an&nbsp; invalid key will show an error for a bad key
+                and the
+        evaluation will not be displayed.</li>
+            </ol>
+          </li>
+          <li>Click on <b>Begin Evaluation</b> button.</li>
+          <li> Evaluation page should load with any added questions last.</li>
+        </ol>
+        <h2>Evaluation Page Student View<br>Maps to Requirments 1, 2, 3.2, 3.4, 3.5, 4.2, 4.3, 7, and 8 </h2>
+        <ol>
+          <li>Click the appropriate option buttons and enter answers to the
+            questions on the form.</li>
+          <li>Press <b>Save Evaluation </b>button.</li>
+          <li>A &quot;thank you&quot; message is displayed.</li>
+          <li>The key that the student used (other than the apple key) will be
+            deleted from the database.</li>
+          <li> Use the following URL to check the status of the database
+            <a href="http://www.culbertson.info/blues/glenn/show_db.php">http://www.culbertson.info/blues/glenn/show_db.php</a>.&nbsp;</li>
+        </ol>
+        <h2> View Evaluation<br>Maps to Requirments 1, 2, 3.2, 3.4, 3.5, 4.1, 4.4, 7, and 8</h2>
+        <ol>
+          <li>Go to URL <a href="http://www.culbertson.info/blues/gwr/admin_logon.php">http://www.culbertson.info/blues/gwr/admin_logon.php</a>
+            and login with user name guest and password guest.</li>
+          <li>From the MENU click on the <b>View</b> <b>Evaluation Results </b>button.</li>
+          <li>Select the CRN that you want to view the results for. It might
+            already be selected (showing in the selection box).</li>
+          <li>Click the <b>View</b> button.</li>
+          <li>View the results.</li>
+        </ol>
+        <h2>Delete Evaluation Keys<br>Maps to Requirments 1, 2, 3, 7, and 8</h2>
+        <ol>
+          <li>Do one (or both) of the following</li>
+        </ol>
+        <ul>
+          <li>Go to the other browser window that you logged in with the
+            non-student log in and click on the <b>Delete keys </b>button</li>
+        </ul>
+        <blockquote>
+          <p>or</p>
+        </blockquote>
+        <ul>
+          <li>go to URL <a href="http://www.culbertson.info/blues/gwr/admin_logon.php">http://www.culbertson.info/blues/gwr/admin_logon.php</a>
+            and do the following.
+            <ul>
+              <li>Login with user name guest and password guest.</li>
+              <li>From the MENU click on the <b>Create</b> <b>Evaluation </b> button.</li>
+              <li>In the left box, select the CRN that was entered above to
+                delete the keys that were created.</li>
+              <li>Click on the <b>Delete keys for CRN </b>button.</li>
+            </ul>
+          </li>
+        </ul>
+        <ol>
+          <li value="2">The status of deleting
+            the keys is displayed.</li>
+          <li> There will be three buttons displayed.</li>
+        </ol>
+            <ul>
+              <li>The <b>Delete Results </b>button will delete all student
+                entries for the CRN displayed on the page. This button can be
+                ignored at this time since there aren't any results to delete.
+                If you want to click on it you may but use the browsers back
+                button to return to the erase.php page.</li>
+              <li>
+                <p style="margin-bottom: 0">Click on the <b>manual
+            </b>button to make a single key entry into the database.&nbsp;
+                <p style="margin-top: 0">- Enter the CRN, key, time start and
+                time end and click on the <b>Insert Key</b>
+            button.<br>
+                - The results are displayed. Click on the <b>Back</b> button to go back to
+            the single key entry page.</li>
+              <li>
+                <p style="margin-top: 0">Click on the <b>Back</b> button to go back to
+            the Eval Management page.</li>
+            </ul>
+        <h2 style="margin-top: 0">Edit an Evaluation<br>Maps to Requirments 1, 2, 3.4, 3.5, 3.8, 4.3, 5.2, 7, and 8</h2>
+        <ol>
+          <li>
+            <p style="margin-top: 0">From the Eval Management page click on the <b>Edit
+            Eval </b>button on the top navigation bar.</li>
+          <li>
+            <p style="margin-top: 0">Select the CRN that you want to edit.</li>
+          <li>
+            <p style="margin-top: 0">Click on the <b>Retrieve information for CRN above</b> button.</li>
+          <li>
+            <p style="margin-top: 0">The page will display all information about
+            the CRN. The desired information can be altered then click on the <b>Update</b>
+            <b> information </b> button.</li>
+          <li>
+            <p style="margin-top: 0">The page will display the results of the
+            update.</li>
+          <li>
+            <p style="margin-top: 0">You may either print the keys by clicking
+            the <b>Print</b> <b> keys </b>button or go back by clicking the <b>Back</b> button to go back to
+            the Edit Evaluation page.</li>
+          <li>
+            <p style="margin-top: 0">Click on the <b>Back</b> button to go back to
+            the Eval Management page.</li>
+        </ol>
+        <h2 style="margin-top: 0">View/Save an Evaluation<br>Maps to Requirments 1, 2, 4.2, 4.3, 7, and 8</h2>
+        <ol>
+          <li>
+            <p style="margin-top: 0">From the Eval Management page right side
+            box select the CRN that you want to view/save. Select 0 to view/save
+            all information for all CRNs.</li>
+          <li>
+            <p style="margin-top: 0">Click on the <b>View</b> <b>Eval</b> button.</li>
+          <li>
+            <p style="margin-top: 0">The <b>Save HTML Document</b> dialog box
+            will appear. Edit the name in the file name box, navigate to the
+            desired location to save the eval, then click on the <b>Save</b>
+            button.</li>
+          <li>
+            <p style="margin-top: 0">There is a button on the page that can be
+            selected if the above is cancelled.</li>
+        </ol>
+        <h2 style="margin-top: 0">Navigation Button Bar<br>Maps to Requirments 1, 2, 7, and 8</h2>
+        <ol>
+          <li>
+            <p style="margin-top: 0">Click on any button on the top Navigation
+            Button Bar to quickly navigate to the desired portion of the site.</li>
+          <li>
+            <p style="margin-top: 0">Click on the <b>Admin Site Map</b> button
+            to display a graphic showing the links between the various pages.</li>
+        </ol>
+            <h2 style="margin-top: 0">Change Password<br>Maps to Requirments 1, 2, 3.6, 3.7, 7, and 8</h2>
+            <p style="margin-top: 0">This is not implemented yet.
+            <p style="margin-top: 0">&nbsp;
+            <h2 style="margin-top: 0">Enter a new User<br>Maps to Requirments 1, 2, 5.1, 7, and 8</h2>
+            <p style="margin-top: 0">This is not implemented yet.
+	</td>
+    </tr>
+  </table>
+  </center>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./InstructorUseCasePsuedocode_files/filelist.xml">
+<title>Instructor Use Case Psuedocode</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Larry Bell</o:Author>
+  <o:LastAuthor>Larry Bell</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>163</o:TotalTime>
+  <o:Created>2004-03-02T23:22:00Z</o:Created>
+  <o:LastSaved>2004-03-02T23:22:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>342</o:Words>
+  <o:Characters>1951</o:Characters>
+  <o:Company>Intel Corporation</o:Company>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2395</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body background=http://nelson.capital.ous.edu/~blues/dna_bkgd.gif>
+
+<!---- table setup, title, and header ------->
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="8" width=100% height="815">
+    <tr>
+      <td align="right" valign="top" width=20% bgcolor="#FFFFFF" height="91">
+	<img border="0" src="http://nelson.capital.ous.edu/~blues/oitlogo.gif" align="top" width="173" height="121"></td>
+      <td width="10" height="91">&nbsp;</td>
+      <td valign="middle" width=80% height="91" align="center"><font size="5">
+        Software Engineering Design and Implementation<br>
+        Blue Team</font></td>
+    </tr>
+
+<!---- left column links ------->
+    <tr>
+      <td valign="top" width=10% height="708"><font size="2"><strong>Software Engineering Technology</strong></font>
+<br><br>
+<a href=http://nelson.capital.ous.edu/~blues/main_page.html>Blues Home Page</a><br>
+
+</td>
+      <td width="10" height="708">&nbsp;</td>
+      <td valign="top" width=90% height="708"><br>
+
+<!---- beginning of body text ------->
+
+<div class=Section1>
+
+<p class=MsoNormal>Instructor Use Case Psuedocode</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>NON-STUDENT LOGON</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Log on web page is displayed</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Logon information is entered then the submit button is
+clicked or the enter key is pressed.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The web page sends the logon information to the validation
+module on the web server.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The validation module processes the logon information.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>If the logon information is authenticated the instructor’s
+main page or the Admin’s main page is loaded up in the browser and a session ID
+is issued. Otherwise an error message is displayed.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>INSTRUCTOR’S MAIN PAGE</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Instructor’s main page is displayed showing all the
+instructor’s courses. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The instructor chooses a course by clicking on a link or
+button.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The web page sends the course information and session ID to
+the reports module of the web server.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The reports module will validate the session ID and check to
+see if the evaluation for the class is ready. Before the evaluation is issued
+to students the add/modify questions web page is loaded up. If the evaluation
+has been issued to students but has not been completed then a message is
+displayed with a date to return for the results (the main page is loaded up
+after a button is pressed). If the evaluation has been completed then the
+reports module will submit a report request to the database SQL server.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>ADD/MODIFY QUESTIONS</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Instructor’s add/modify questions page is displayed showing
+all the questions, buttons to add or modify a question or to go back to the
+main page, and a drop down menu for all the courses that the instructor
+teaches. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The instructor selects either to modify an existing question
+or to add a new question.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>If the add question was selected then the empty question web
+page is loaded. Otherwise the question web page is populated with the question
+to be modified.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The instructor enters/modifies the question and selects what
+course it is for.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The instructor submits the question for admin review and
+acceptance.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The web page submits the question to the pending question
+approval module on the web server.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The instructor’s add/modify questions page is displayed
+again.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>EVALUATION REPORT</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The database SQL server returns the evaluation report to the
+report module.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The report is displayed on the web page.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The instructor will read and/or print the evaluation then
+when finished will click on the finished button to return to the instructor’s
+main page.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+	</font></p>
+	</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

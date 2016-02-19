@@ -1,0 +1,486 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0143)http://e1.email.excite.com/msg_read.php?m=0&s=1&d=1&mid=2044&pr=1&ArdSI=9627e9ff04759a975fd8a5f96884f1b7&ArdSI=9627e9ff04759a975fd8a5f96884f1b7 -->
+<HTML xmlns:o = "urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>Inbox Message List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- INSERT META JUNK -->
+<STYLE type=text/css>UNKNOWN {
+	SCROLLBAR-BASE-COLOR: #6699cc
+}
+.navOn {
+	BORDER-RIGHT: #6699cc 2px solid; BORDER-TOP: #487bae 3px solid; BORDER-LEFT: #487bae 3px solid; BORDER-BOTTOM: #6699cc 2px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOnHglt {
+	BORDER-RIGHT: #487bae 3px solid; BORDER-TOP: #84b7ea 2px solid; BORDER-LEFT: #84b7ea 2px solid; BORDER-BOTTOM: #487bae 3px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOff {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-TOP: #cecece 3px solid; BORDER-LEFT: #cecece 3px solid; BORDER-BOTTOM: #e2e2e2 2px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.navOffHglt {
+	BORDER-RIGHT: #cecece 3px solid; BORDER-TOP: #f6f6f6 2px solid; BORDER-LEFT: #f6f6f6 2px solid; BORDER-BOTTOM: #cecece 3px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.folLst {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #6699cc; text-decoratation: none
+}
+.folLstHover {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #75a8db
+}
+.btnDsp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.txtDsp {
+	FONT-SIZE: 12px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.msgBxHdr {
+	BORDER-RIGHT: #e2e2e2 2px solid
+}
+.msgBxBrdr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.msgBxBdy {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-BOTTOM: #e2e2e2 3px solid
+}
+.chkBxSel {
+	BORDER-BOTTOM: #6699cc 1px solid; BACKGROUND-COLOR: #7aade0
+}
+.chkBxDesel {
+	BORDER-BOTTOM: #e2e2e2 1px solid
+}
+.vertSep {
+	BORDER-LEFT: #6699cc 1px solid
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=0&s=1&d=1&mid=2044&ca=" + document.msg_list.ca.value + "&ArdSI=9627e9ff04759a975fd8a5f96884f1b7";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2737.800" name=GENERATOR></HEAD>
+<BODY vLink=#000066 aLink=#ff0000 link=#000066 leftMargin=3 topMargin=3 
+marginwidth="3" marginheight="3"><BASEFONT face=geneva,arial>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM name=msg_list action="" method=post><INPUT type=hidden 
+  value=9627e9ff04759a975fd8a5f96884f1b7 name=ArdSI> <INPUT type=hidden value=4 
+  name=ca></FORM>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A href="javascript:window.close();"><FONT 
+            face=geneva,arial size=1>[ Close This Window 
+        ]</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=2 src="Faculty Evaluation Process_files/spacer.gif" 
+      width=1 border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=16 
+            hspace=10 src="Faculty Evaluation Process_files/msg_flagged_no.gif" 
+            width=14 align=absMiddle border=0> Message is not flagged. [ <A 
+            onclick="chgSte('sflg'); return false;" 
+            href="http://e1.email.excite.com/msg_read.php?ArdSI=9627e9ff04759a975fd8a5f96884f1b7"><FONT 
+            color=black>Flag for Follow Up</FONT></A> 
+      ]</FONT></TD></TR></TBODY></TABLE><IMG height=2 
+      src="Faculty Evaluation Process_files/spacer.gif" width=1 border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Date:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Mon, 2 
+            Feb 2004 12:11:43 -0800</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>From:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Gary W. 
+            Roberts &lt;robertsg@oit.edu&gt;<BR><FONT size=1>[ <A 
+            href="http://e1.email.excite.com/abook.php?a=0&amp;w=0&amp;msg=1&amp;m=0&amp;mid=2044&amp;ArdSI=9627e9ff04759a975fd8a5f96884f1b7&amp;ArdSI=9627e9ff04759a975fd8a5f96884f1b7"><FONT 
+            color=#0000ff>Add to Address Book</FONT></A> | <A 
+            onclick="bsThis('b', 'robertsg@oit.edu'); return false;" 
+            href="http://e1.email.excite.com/msg_read.php?ArdSI=9627e9ff04759a975fd8a5f96884f1b7"><FONT 
+            color=#0000ff>Block Address</FONT></A> | <A 
+            onclick="rSpam(); return false;" 
+            href="http://e1.email.excite.com/msg_read.php?ArdSI=9627e9ff04759a975fd8a5f96884f1b7"><FONT 
+            color=#0000ff>Report as Spam</FONT></A> ]</FONT></FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>To:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Mike 
+            &lt;mike@culbertson.info&gt;,Matt &lt;mklump@comcast.net&gt;,Larry 
+            &lt;larrycbell@excite.com&gt;,Glenn 
+            &lt;gdiviney@comcast.net&gt;,Gary 
+        &lt;robertsg@oit.edu&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Subject:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>FW: 
+            Faculty Evaluation Process</FONT></TD></TR></TBODY></TABLE><FONT 
+      size=1><BR></FONT></FONT></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD width="100%"><FONT size=2>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2><LINK 
+                  href="cid:filelist.xml@01C3E985.B37B72C0" rel=File-List><!--[if gte mso 9]><xml><o:OfficeDocumentSettings> <o:DoNotRelyOnCSS/></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument> <w:View>Normal</w:View> <w:Zoom>0</w:Zoom> <w:DocumentKind>DocumentEmail</w:DocumentKind> <w:EnvelopeVis/> <w:DrawingGridHorizontalSpacing>9.35 pt</w:DrawingGridHorizontalSpacing> <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery></w:WordDocument></xml><![endif]-->
+                  <STYLE>@font-face {
+	font-family: Trebuchet MS;
+}
+@font-face {
+	font-family: Papyrus;
+}
+@page Section1 {size: 8.5in 11.0in; margin: .6in 1.0in .6in 1.0in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+P.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly
+}
+LI.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly
+}
+DIV.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly
+}
+P.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+P.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+SPAN.EmailStyle15 {
+	COLOR: navy; mso-bidi-font-family: Arial; mso-style-type: personal-reply; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: "Trebuchet MS"; mso-hansi-font-family: "Trebuchet MS"
+}
+P.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-name: code
+}
+LI.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-name: code
+}
+DIV.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-name: code
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+
+                  <DIV class=Section1>
+                  <P class=MsoNormal><SPAN class=EmailStyle15><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; mso-bidi-font-size: 10.0pt">JanelleKnaggs 
+                  resond to a phone call I made Friday in a big 
+                  way.<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle15><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; mso-bidi-font-size: 10.0pt">Checkit 
+                  out~! <o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle15><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; mso-bidi-font-size: 10.0pt">Thisshould 
+                  help in doing some Use Case 
+                  analysis.<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle15><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; mso-bidi-font-size: 10.0pt"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoAutoSig><!--[if supportFields]><font color=navy><span style='color:navy'><span style='mso-element:field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>AUTOTEXTLIST \s &quot;E-mail Signature&quot; <span style='mso-element:field-separator'></span></span></font><![endif]--><B><I><FONTCOLOR=NAVY 
+                  face="Papyrus"><SPAN 
+                  style="FONT-WEIGHT: bold; COLOR: navy; FONT-STYLE: italic; FONT-FAMILY: Papyrus">Gary</SPAN></FONT></I></B><B><I><FONT 
+                  color=#0ace00><SPAN 
+                  style="FONT-WEIGHT: bold; COLOR: navy; FONT-STYLE: italic; FONT-FAMILY: Papyrus; mso-color-alt: windowtext"><o:p></o:p></SPAN></FONT></I></B></P>
+                  <P class=MsoNormal><!--[if supportFields]><font color=navy><span style='color:navy'><span style='mso-element:field-end'></span></span></font><![endif]--><FONTCOLOR=NAVY><SPAN 
+                  style="COLOR: navy"><![if !supportEmptyParas]><![endif]>&nbsp;</SPAN></FONT><FONTCOLOR=NAVY><SPAN 
+                  style="COLOR: navy; mso-color-alt: windowtext"><o:p></o:p></SPAN></FONT></P></DIV>
+                  <P></FONT></P></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT size=1><BR></FONT></TD></TR>
+              <TR>
+                <TD bgColor=#e2e2e2><FONT face=geneva,arial color=#000000 
+                  size=2><B>Forwarded Message:</B></FONT></TD></TR>
+              <TR>
+                <TD><FONT size=1><BR></FONT></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2><LINK 
+                  href="cid:filelist.xml@01C3E896.45752770" rel=File-List>
+                  <STYLE>@font-face {
+	font-family: Trebuchet MS;
+}
+@font-face {
+	font-family: Papyrus;
+}
+@page Section1 {size: 8.5in 11.0in; margin: .6in 1.0in .6in 1.0in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+P.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly
+}
+LI.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly
+}
+DIV.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly
+}
+P.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+P.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+LI.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+DIV.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Trebuchet MS"; mso-pagination: widow-orphan; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"
+}
+SPAN.EmailStyle15 {
+	FONT-WEIGHT: normal; COLOR: black; FONT-STYLE: normal; mso-bidi-font-family: Arial; mso-style-type: personal-compose; mso-ansi-font-size: 12.0pt; mso-ascii-font-family: "Trebuchet MS"; mso-hansi-font-family: "Trebuchet MS"
+}
+P.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-name: code
+}
+LI.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-name: code
+}
+DIV.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-name: code
+}
+SPAN.EmailStyle20 {
+	FONT-WEIGHT: normal; COLOR: black; FONT-STYLE: normal; mso-bidi-font-family: Arial; mso-style-type: personal; mso-ansi-font-size: 12.0pt; mso-ascii-font-family: "Trebuchet MS"; mso-hansi-font-family: "Trebuchet MS"
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+
+                  <DIV>Listed below are the steps I currently go through each 
+                  term to create, process and print results for the faculty 
+                  evaluation process.&nbsp; I do this process twice each term 
+                  because the classes taught at Boeing have their data kept 
+                  separate from everyone else.&nbsp; All Portland sites&nbsp;and 
+                  Klamath Falls are combined though.&nbsp; Is it important for 
+                  you to know that besides Metro and CAPITAL center, we also 
+                  have two other satellite programs evaluated each term that are 
+                  taught with OHSU instructors at two different locations?</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Important term to know first:</DIV>
+                  <DIV>SIS - Student Information System - This is&nbsp;the OIT 
+                  campus program where&nbsp;all data about OIT students and 
+                  classes are kept and updated.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Steps:</DIV>
+                  <DIV>Create Evaluation Set Tables — This is done on the Monday 
+                  following the "last day to drop with a W."&nbsp; It takes the 
+                  data from SIS at that point and puts it in a table.&nbsp; It 
+                  excludes some types of classes such as Independent Study, 
+                  Seminars, Distance Ed, etc.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Merge Evaluation Sets (If classes are added after initial 
+                  run) —&nbsp; If an instructor wants to include a class that is 
+                  usually excluded, they are allowed to do so in most 
+                  cases.&nbsp; I then have do step one again and create an 
+                  evaluation set for just those added classes and then perform 
+                  this step of merging the two sets.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Load an Evaluation Set Table for Processing — I choose 
+                  which set to work with in this step.&nbsp; I will have a 
+                  Boeing set and and Regular set active at the same time, so I 
+                  have to let the program know which one to use.&nbsp; It stays 
+                  on that set unless I come back to this step and change to the 
+                  other one.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Evaluation Course Tracking List — This step prints a hard 
+                  copy of all the classes in the set.&nbsp; It includes the CRN, 
+                  instructor, mailstop, etc.&nbsp; I use it to check off when 
+                  packets are returned.&nbsp; It may not be needed for an online 
+                  process.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Distribution Labels (8x11) — This step prints an 8x11 
+                  label to place on the outside of the packet.&nbsp; It contains 
+                  CRN, class, instructor, location, number of students, 
+                  etc.&nbsp; This step will not be needed for an online 
+                  process.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Blue and Manila Envelope Labels — These steps print out 
+                  the small label that is placed on each manila and each blue 
+                  envelope.&nbsp; It contains the CRN, class, instructor, 
+                  location, number of students.&nbsp;&nbsp; This step will not 
+                  be needed for an online process.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Create custom question forms — Instructors are allowed to 
+                  modify their forms to have different questions except question 
+                  number one has to remain.&nbsp; I use a separate program to 
+                  create and print these forms.&nbsp; They can even have 
+                  different questions for different classes.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Packets are stuffed with forms — All the labels printed 
+                  above are attached to the appropriate envelopes.&nbsp; Forms 
+                  are put into each envelope according to the class count listed 
+                  on the label.&nbsp; The out of town packets are mailed and the 
+                  on campus ones are left in each building at the common 
+                  secretary's desk area in locked boxes.&nbsp; The&nbsp;actual 
+                  filling out of forms happens&nbsp;the last two weeks before 
+                  finals week.&nbsp; This step is totally a manual process, so 
+                  it definitely won't be needed for an online process and will 
+                  save the most time.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Load Results File from F: drive — After all the packets 
+                  have been returned, which is the day finals start, I use a 
+                  scanner machine to get the results into a notepad file.&nbsp; 
+                  It is just a regular&nbsp;text file.&nbsp; I then place these 
+                  files on the network drive F in a certain folder.&nbsp; There 
+                  are three files: one with the standard forms data, one with 
+                  custom forms data, and one with the custom questions for each 
+                  instructor that choose to use them</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Calculate Evaluation Results — This step calculates each 
+                  instructors results.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Faculty Evaluations Instructor Reports- Recap and Details 
+                  — This step prints the reports that go back to the 
+                  instructor.&nbsp; The recap just shows for all classes that 
+                  person taught what their average was on question one.&nbsp; 
+                  The details report shows for each class how many students 
+                  answered each question with each answer.&nbsp; Reports can not 
+                  be returned to the faculty until after the date that all 
+                  grades must be turned in, which is the Tuesday after finals 
+                  usually.&nbsp; Usually it takes a little while longer anyway 
+                  and they get their reports shortly after returning for the 
+                  next term.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>White Envelope Return Labels&nbsp; — This step just 
+                  prints labels to put on the envelopes we use to send the 
+                  faculty their reports.&nbsp; So this is another step that will 
+                  be eliminated if it is online.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Calculate Institutional Totals&nbsp; —&nbsp; After the 
+                  instructors have had about one week to look over their reports 
+                  for problems, this step is done.&nbsp; It calculates the 
+                  totals across all the campuses for just question number 
+                  one.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Faculty Evaluations Administration Reports - College 
+                  Recap, Department Recap, Campus Recap, Class Type Recap, and 
+                  Instructor Rank Recap&nbsp; —- These steps create the reports 
+                  that are given to the President, Provost and some are given to 
+                  the Department chairs.&nbsp; The Department Chairs also get a 
+                  copy of the Instructor reports that were given to the 
+                  individual instructors.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>The blue comment forms are not opened by anyone but the 
+                  instructor themselves here in Klamath Falls.&nbsp; I believe 
+                  in Portland that the someone types up the responses???&nbsp; 
+                  This is something that I'm not involved with, so you'll need 
+                  to check with the ladies in Portland about what they do.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>The supported web browser for OIT including the general 
+                  OIT webpage&nbsp;and Web for Student is Internet Explorer, so 
+                  I'd recommend creating your program to work&nbsp;well on 
+                  it.&nbsp;</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>At this time, students don't have access to these reports 
+                  that I'm aware of.&nbsp; I don't know if they asked, if they 
+                  could see an instructor's results or not.&nbsp; I keep copies 
+                  in case someone loses their printed copy.&nbsp; The Provost 
+                  Office could let you know if&nbsp;students would be allowed 
+                  access to reports and which ones.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>So this gives you the overview of what I do for 
+                  steps.&nbsp; Let me know if you need an explanation on 
+                  something.</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>Janelle Knaggs</DIV>
+                  <DIV>ITS</DIV>
+                  <DIV><BR>&nbsp;</DIV>
+                  <P></FONT></P></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<FORM name=msg_action action=msg_proc.php method=post><INPUT type=hidden 
+value=9627e9ff04759a975fd8a5f96884f1b7 name=ArdSI> <INPUT type=hidden 
+value=9627e9ff04759a975fd8a5f96884f1b7 name=ArdSI> <INPUT type=hidden name=act> 
+<INPUT type=hidden name=url> <INPUT type=hidden value=0|1|1 name=m_back> <INPUT 
+type=hidden name=m_to> <INPUT type=hidden value=2044 name=mid> <INPUT 
+type=hidden name=indBS> <INPUT type=hidden name=pg> 
+</FORM></BASEFONT></BODY></HTML>

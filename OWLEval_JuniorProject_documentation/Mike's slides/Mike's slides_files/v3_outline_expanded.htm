@@ -1,0 +1,261 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../Mike's%20slides.htm">
+<link rel=Preview href=preview.wmf>
+<script>
+<!--
+if( window.name != "PPTOtl" )
+  parent.location.href = "../Mike\'s%20slides.htm";
+//-->
+</script>
+<meta name=Robots content=NoIndex>
+</head>
+
+<body bgcolor=black alink=white link=white vlink=white text=white>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0001.htm');">A Concise History of the
+Changes to Our Original Design</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0002.htm');">Original Design</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Connected to OIT’s Database to cull
+  course and instructor information.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Would be implemented completely in PHP</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Would allow instructors to augment
+  their own evaluations, and would require administrators to approve those
+  augmentations.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0003.htm');">Initial Modifications to
+our Requirements</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Access to OIT’s database proved
+  problematic</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Bureaucratic Nightmare</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>OIT’s Database is Oracle; we don’t have
+  access to Oracle for development purposes</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>OIT’s DB has 1200+ tables</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0004.htm');">Solution</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>We would not connect at all to OIT’s
+  Database.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>There is very little information that
+  our application actually needs from OIT’s DB.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>By eliminating our requirement to work
+  with the existing database, we’d increase the amount of work that the
+  administrator would have to do.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0005.htm');">Further Changes</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>To increase Database performance, the
+  interface to our DB would be implemented in Perl using FastCGI</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>FastCGI allows a script to remain in
+  binary format in memory, and would maintain an open DB connection which all
+  of our other objects could use.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0006.htm');">Augmentation Approval
+Unnecessary</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>It was determined that the instructors
+  could be trusted to write augmentations that would be appropriate, and that
+  by having the administrators approve all augmentations created a lot of
+  unnecessary work.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>The requirement for administrator
+  approval of augmentations was dropped</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0007.htm');">Other Languages</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>It was suggested that we consider using
+  .Net for our project and C#, as more of us have familiarity with that
+  language than with PHP or Perl.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>The logistical considerations of using
+  IIS-centric technology were brought up, and it was suggested that we consider
+  using Java Servlets with Tomcat server as a more practical option,
+  considering our available resources.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0008.htm');">The Results</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Considering that these suggestions were
+  made so late in the term, after weighing the benefits of these changes versus
+  the modifications we’d have to make to our design, we opted to stay the
+  course with PHP and Perl.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0009.htm');">PHP4 Obviates FastCGI</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Researching the features of the PHP
+  language, a library was discovered that maintains a persistent DB connection
+  from one script on a server to the next.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>This performs the task that FastCGI was
+  brought in to the design to do, without the hellacious interface that FastCGI
+  would’ve required.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>FastCGI was dropped from the design</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('v3_slide0010.htm');">Wrap-up</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>We ended up with a design that was very
+  similar to what we’d started out with, sans a few problematic requirements.</font></td>
+ </tr>
+</table>
+
+</p>
+
+</body>
+
+</html>

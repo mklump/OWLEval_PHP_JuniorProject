@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0143)http://e20.email.excite.com/msg_read.php?m=25&s=1&d=1&mid=41&pr=1&ArdSI=19164213d90ed089217dc8cb765af388&ArdSI=19164213d90ed089217dc8cb765af388 -->
+<HTML><HEAD><TITLE>CST326 Message List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- INSERT META JUNK -->
+<STYLE type=text/css>UNKNOWN {
+	SCROLLBAR-BASE-COLOR: #6699cc
+}
+.navOn {
+	BORDER-RIGHT: #6699cc 2px solid; BORDER-TOP: #487bae 3px solid; BORDER-LEFT: #487bae 3px solid; BORDER-BOTTOM: #6699cc 2px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOnHglt {
+	BORDER-RIGHT: #487bae 3px solid; BORDER-TOP: #84b7ea 2px solid; BORDER-LEFT: #84b7ea 2px solid; BORDER-BOTTOM: #487bae 3px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOff {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-TOP: #cecece 3px solid; BORDER-LEFT: #cecece 3px solid; BORDER-BOTTOM: #e2e2e2 2px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.navOffHglt {
+	BORDER-RIGHT: #cecece 3px solid; BORDER-TOP: #f6f6f6 2px solid; BORDER-LEFT: #f6f6f6 2px solid; BORDER-BOTTOM: #cecece 3px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.folLst {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #6699cc; text-decoratation: none
+}
+.folLstHover {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #75a8db
+}
+.btnDsp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.txtDsp {
+	FONT-SIZE: 12px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.msgBxHdr {
+	BORDER-RIGHT: #e2e2e2 2px solid
+}
+.msgBxBrdr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.msgBxBdy {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-BOTTOM: #e2e2e2 3px solid
+}
+.chkBxSel {
+	BORDER-BOTTOM: #6699cc 1px solid; BACKGROUND-COLOR: #7aade0
+}
+.chkBxDesel {
+	BORDER-BOTTOM: #e2e2e2 1px solid
+}
+.vertSep {
+	BORDER-LEFT: #6699cc 1px solid
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=25&s=1&d=1&mid=41&ca=" + document.msg_list.ca.value + "&ArdSI=19164213d90ed089217dc8cb765af388";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2737.800" name=GENERATOR></HEAD>
+<BODY vLink=#000066 aLink=#ff0000 link=#000066 leftMargin=3 topMargin=3 
+marginwidth="3" marginheight="3"><BASEFONT face=geneva,arial>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM name=msg_list action="" method=post><INPUT type=hidden 
+  value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden value=4 
+  name=ca></FORM>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A href="javascript:window.close();"><FONT 
+            face=geneva,arial size=1>[ Close This Window 
+        ]</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=2 
+      src="RE-(Jay) I'm going to design a database_files/spacer.gif" width=1 
+      border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=16 
+            hspace=10 
+            src="RE-(Jay) I'm going to design a database_files/msg_flagged_no.gif" 
+            width=14 align=absMiddle border=0> Message is not flagged. [ <A 
+            onclick="chgSte('sflg'); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=black>Flag for Follow Up</FONT></A> 
+      ]</FONT></TD></TR></TBODY></TABLE><IMG height=2 
+      src="RE-(Jay) I'm going to design a database_files/spacer.gif" width=1 
+      border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Date:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Sat, 21 
+            Feb 2004 22:02:37 -0800</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>From:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Jay 
+            Bockelman &lt;bockelmj@oit.edu&gt;<BR><FONT size=1>[ <A 
+            href="http://e20.email.excite.com/abook.php?a=0&amp;w=0&amp;msg=1&amp;m=25&amp;mid=41&amp;ArdSI=19164213d90ed089217dc8cb765af388&amp;ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Add to Address Book</FONT></A> | <A 
+            onclick="bsThis('b', 'bockelmj@oit.edu'); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Block Address</FONT></A> | <A 
+            onclick="rSpam(); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Report as Spam</FONT></A> ]</FONT></FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>To:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black 
+            size=2>&lt;gdiviney@comcast.net&gt;, &lt;mklump@comcast.net&gt;, 
+            &lt;mike@culbertson.info&gt;, &lt;larrycbell@excite.com&gt;,'Gary 
+            Roberts' &lt;robertsg@oit.edu&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Subject:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black 
+            size=2>Re:</FONT></TD></TR></TBODY></TABLE><FONT 
+    size=1><BR></FONT></FONT></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD width="100%"><FONT size=2>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2><BR>Matt and Blue 
+                  Team.<BR>This is an excellent discussion to be having now. It 
+                  is wise to<BR>question the assumptions and high risk 
+                  requirements of the project. It<BR>is during the analysis and 
+                  design phase that you want to hammer out all<BR>the details so 
+                  that everyone feels comfortable and confident with 
+                  the<BR>architecture and implementation plan.<BR><BR>Since 
+                  you've already initiated a dialog with Lonnie, please follow 
+                  up<BR>with him. I will do anything I can to assist you. You 
+                  certainly don't<BR>have to go through me. However, I will also 
+                  contact Lonnie to both<BR>validate your legitimacy (if that's 
+                  even necessary), and to see if I can<BR>provide some 
+                  additional influence in getting the data definitions. 
+                  <BR><BR>Best of luck Blue Team!<BR>jay<BR><BR><BR>Jay 
+                  Bockelman<BR>Oregon Institute of Technology<BR>Software 
+                  Engineering Technology<BR>Program Director - 
+                  Portland<BR>bockelmj@oit.edu<BR>503-725-2127<BR><BR>&gt;&gt;&gt; 
+                  "Matthew Klump" &lt;mklump@comcast.net&gt; 2/19/2004 3:31:59 
+                  PM &gt;&gt;&gt;<BR>Hi there everyone, I'm sure all of you and 
+                  myself came to a rather<BR>quick conclusion when I had 
+                  announced "I'm going to design a<BR>database!" Relying on much 
+                  reflection/reassessment done yesterday on<BR>our documentation 
+                  already posted, I would like to propose the 
+                  following<BR>modifications to our documentation. #1In the 
+                  document &lt;Requirements.htm&gt;<BR>for requirements, I would 
+                  like to suggest a change on requirement 8.3,<BR>instead of 
+                  being "Shall work correctly," I propose to change 
+                  this<BR>requirement to "Shall correctly satisfy a complete set 
+                  of validation<BR>tests designed to prove each separate 
+                  requirement outline in this<BR>document." #2In the document 
+                  &lt;Matrix.xls&gt; for skills required to<BR>contribute 
+                  successfully to the project, I have to stress the need 
+                  to<BR>change the statement outlined by "Skills needed to 
+                  complete our<BR>project:" right now as "SQL, PHP, and possibly 
+                  PERL" to "SQL,<BR>HTML, C#, possibly PHP, and possibly 
+                  PERL."The reason for this<BR>specific change is five fold:1. 
+                  It is my belief that the entire<BR>project could be could be 
+                  constructed from start to finish with just<BR>SQL, HTML, and 
+                  C#.2. In the document &lt; risk_analysis.htm &gt; 
+                  Glenn<BR>outlined the catastrophic risk "No language 
+                  experience" as a 50%<BR>change, and the critical risk 
+                  "Inadequate language proficiency" as<BR>another 50% chance!3. 
+                  It is also my belief that the statements<BR>"Learn necessary 
+                  skill" and "Use parallel programming, more<BR>than one 
+                  developer on each task" has truth. However, learning a 
+                  new<BR>language like PHP before you learn HTML, and PERL 
+                  before you know C# and<BR>VB is quite a daunting task if you 
+                  know nothing of the preliminary<BR>languages and poses another 
+                  significant risk to over running the project<BR>dead line!4. 
+                  Changing the required language skills to a base line 
+                  of<BR>tools that everyone posses will provide for us a 
+                  "standard" everyone<BR>can use for this project.5. For the 
+                  proposed base language tools,<BR>SQL, HTML, and C#, I have a 
+                  number of tools that I'd enjoy sharing<BR>with the rest of you 
+                  guys:a. Dream Weaver 4.0 to emulate the<BR>construction of 
+                  HTML pages functioning as an RDBMS server 
+                  application.b.<BR>Microsoft Office Front Page Professional 
+                  2003 as another possibility<BR>for simple HTML editing 
+                  needs.c. HTML &amp; XHTML The definitive guide<BR>by Musciano 
+                  &amp; Kennedy, available on amazon.com for $27.00 with free 
+                  five<BR>day shipping.d. Glenn and I both have complete SQL 
+                  guides if anybody<BR>doesn't have one.e. I have several C# 
+                  guides I'm willing to<BR>lend for the purpose of completing 
+                  our project. In regard to creating a<BR>"first mock database 
+                  design" I need you guys to know that I feel it<BR>is 
+                  imperative that we seek permission from Lonnie Bradshaw down 
+                  in<BR>Klamath Falls for a complete SQL database sample 
+                  including attributes<BR>and excluding actual data except for a 
+                  John Doe data entry.Jay if your<BR>reading this, I understand 
+                  that it would be more appropriate to go<BR>through you to 
+                  complete this detail. However, I had originally been 
+                  in<BR>contact with Lonnie on January, 22nd, so if its okay, 
+                  I'd like to get<BR>a hold of her directly. Guys, I'll try to 
+                  have to have the first mock<BR>design completed and posted by 
+                  this Sunday night. I will base the first<BR>mockup on the 
+                  objects we had so identified in deliverable 2.1. Please<BR>let 
+                  me know if you feel there is something critical we may need in 
+                  the<BR>first mockup. At this point I obviously need each one 
+                  of you guys to<BR>respond to this email as you read this some 
+                  time before next Tuesday,<BR>because we're all going to be 
+                  individually interviewed by Jay next<BR>week to see were each 
+                  one of us feels we are with the project as well as<BR>having 
+                  to turn in deliverable #4. I enjoy doing this project and 
+                  will<BR>see you next time. 
+              -Matt<BR><BR><BR><BR><BR></FONT></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<FORM name=msg_action action=msg_proc.php method=post><INPUT type=hidden 
+value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden 
+value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden name=act> 
+<INPUT type=hidden name=url> <INPUT type=hidden value=25|1|1 name=m_back> <INPUT 
+type=hidden name=m_to> <INPUT type=hidden value=41 name=mid> <INPUT type=hidden 
+name=indBS> <INPUT type=hidden name=pg> </FORM></BASEFONT></BODY></HTML>

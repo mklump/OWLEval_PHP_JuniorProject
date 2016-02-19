@@ -1,0 +1,49 @@
+<?php
+
+  db_connect_str=""
+  error_str=""
+  conn=""
+  user_type="invalid"
+
+  begin_page();
+  open_db();
+  if ($error_str="")
+  {
+    validate();
+    main();
+    close_db();
+  }
+  else
+  {
+    print("$error_str");
+  }
+
+function begin_page()
+{
+  print("</title>Owl Eval survey system. Oregon Institue of Technology</title>");
+  print("</head><body bgcolor=c0c0c0>");
+}
+
+function open_db()
+{
+}
+
+function close_db()
+{
+}
+
+function validate()
+{
+}
+
+function log_entry($entry_str)
+{
+}
+
+function send_me($page_name)
+{
+  close_db();
+  header('Location: $page_name');
+}
+
+?>

@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0144)http://e22.email.excite.com/msg_read.php?m=0&s=1&d=1&mid=2271&pr=1&ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2&ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2 -->
+<HTML><HEAD><TITLE>Inbox Message List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- INSERT META JUNK -->
+<STYLE type=text/css>UNKNOWN {
+	SCROLLBAR-BASE-COLOR: #6699cc
+}
+.navOn {
+	BORDER-RIGHT: #6699cc 2px solid; BORDER-TOP: #487bae 3px solid; BORDER-LEFT: #487bae 3px solid; BORDER-BOTTOM: #6699cc 2px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOnHglt {
+	BORDER-RIGHT: #487bae 3px solid; BORDER-TOP: #84b7ea 2px solid; BORDER-LEFT: #84b7ea 2px solid; BORDER-BOTTOM: #487bae 3px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOff {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-TOP: #cecece 3px solid; BORDER-LEFT: #cecece 3px solid; BORDER-BOTTOM: #e2e2e2 2px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.navOffHglt {
+	BORDER-RIGHT: #cecece 3px solid; BORDER-TOP: #f6f6f6 2px solid; BORDER-LEFT: #f6f6f6 2px solid; BORDER-BOTTOM: #cecece 3px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.folLst {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #6699cc; text-decoratation: none
+}
+.folLstHover {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #75a8db
+}
+.btnDsp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.txtDsp {
+	FONT-SIZE: 12px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.msgBxHdr {
+	BORDER-RIGHT: #e2e2e2 2px solid
+}
+.msgBxBrdr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.msgBxBdy {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-BOTTOM: #e2e2e2 3px solid
+}
+.chkBxSel {
+	BORDER-BOTTOM: #6699cc 1px solid; BACKGROUND-COLOR: #7aade0
+}
+.chkBxDesel {
+	BORDER-BOTTOM: #e2e2e2 1px solid
+}
+.vertSep {
+	BORDER-LEFT: #6699cc 1px solid
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=0&s=1&d=1&mid=2271&ca=" + document.msg_list.ca.value + "&ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR></HEAD>
+<BODY vLink=#000066 aLink=#ff0000 link=#000066 leftMargin=3 topMargin=3 
+marginwidth="3" marginheight="3"><BASEFONT face=geneva,arial>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM name=msg_list action="" method=post><INPUT type=hidden 
+  value=4df1a8b3a7eb3331bc1a7ea9815b4ef2 name=ArdSI> <INPUT type=hidden value=4 
+  name=ca></FORM>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A href="javascript:window.close();"><FONT 
+            face=geneva,arial size=1>[ Close This Window 
+        ]</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=2 src="RE Deliverable 5.1_files/spacer.gif" width=1 
+      border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=16 
+            hspace=10 src="RE Deliverable 5.1_files/msg_flagged_no.gif" width=14 
+            align=absMiddle border=0> Message is not flagged. [ <A 
+            onclick="chgSte('sflg'); return false;" 
+            href="http://e22.email.excite.com/msg_read.php?ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=black>Flag for Follow Up</FONT></A> 
+      ]</FONT></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=18 
+            hspace=5 src="RE Deliverable 5.1_files/msg_state_replied1.gif" 
+            width=25 align=absMiddle border=0> Message has been replied to in 
+            the past.</FONT></TD></TR></TBODY></TABLE><IMG height=2 
+      src="RE Deliverable 5.1_files/spacer.gif" width=1 border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Date:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Sun, 14 
+            Mar 2004 20:36:03 -0800</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>From:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Glenn 
+            Diviney &lt;gdiviney@comcast.net&gt;<BR><FONT size=1>[ <A 
+            href="http://e22.email.excite.com/abook.php?a=0&amp;w=0&amp;msg=1&amp;m=0&amp;mid=2271&amp;ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2&amp;ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=#0000ff>Add to Address Book</FONT></A> | <A 
+            onclick="bsThis('b', 'gdiviney@comcast.net'); return false;" 
+            href="http://e22.email.excite.com/msg_read.php?ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=#0000ff>Block Address</FONT></A> | <A 
+            onclick="rSpam(); return false;" 
+            href="http://e22.email.excite.com/msg_read.php?ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=#0000ff>Report as Spam</FONT></A> ]</FONT></FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>To:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black 
+            size=2>&lt;larrycbell@excite.com&gt;, &lt;mike@culbertson.info&gt;, 
+            &lt;mklump@comcast.net&gt;, &lt;robertsg@oit.edu&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Subject:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>RE: CST 
+            326 Deliverable 5.1</FONT></TD></TR></TBODY></TABLE><FONT 
+      size=1><BR></FONT></FONT></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD width="100%"><FONT size=2>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2>I think so, I 
+                  am doing the student branch (the whole upper portion), check 
+                  with matt to see what he's doing.</FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT 
+                  size=2></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2>When I wrote 
+                  "<FONT color=#0000ff>I don't understand how the work has been 
+                  diverted to you" </FONT><SPAN class=015232604-15032004><FONT 
+                  color=#000000 size=2>I was refering to the line from your 
+                  email when you wrote "We could have done a lot of work today 
+                  as a group but now I have even more work to do on my own" 
+                  because I did not understand how more work than we discussed 
+                  had been added to your load. I guess I must've misread the 
+                  meaning of what you were 
+                  saying.</FONT></SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004><STRONG>Here's the current 
+                  status:</STRONG></SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004><STRONG>Things NOT in&nbsp;our 
+                  presentation </STRONG></SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>Deliverable 0 or 
+                  5</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004><STRONG>Things in&nbsp;our 
+                  presentation:</STRONG></SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>Larry: Deliverable 
+                  1</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>Matt: Deliverable 
+                  2</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>Gary: Deliverable 
+                  3</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>Me: Deliverable 
+                  4</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>Mike: Changes and special 
+                  challenges/findings (the PHP DB 
+                  thing)</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004><STRONG>Things I will be doing before 
+                  Tuesday:</STRONG></SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>The project schedule for next term 
+                  (part of deliverable 5)</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004><STRONG>How we are going to 
+                  proceed:</STRONG></SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>--I will post the schedule sometime 
+                  before class on Tuesday, we will review it before class. It's 
+                  correctness is irrelevant, it just has to be a rough 
+                  idea.</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>--Everyone WILL BE USING THE TEMPLATE 
+                  to write their presentaions. Then, before class, we will merge 
+                  each presentation into one "master" presentation and use that. 
+                  We will need to make sure we are not covering each other's 
+                  items.</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004><STRONG>Any 
+                  questions?</STRONG></SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004>Glenn 
+                  Diviney</SPAN></FONT></SPAN></DIV>
+                  <DIV><SPAN class=015232604-15032004><FONT size=2><SPAN 
+                  class=015232604-15032004></SPAN></FONT></SPAN>&nbsp;</DIV>
+                  <BLOCKQUOTE>
+                    <DIV class=OutlookMessageHeader dir=ltr align=left><FONT 
+                    face=Tahoma size=2>-----Original 
+                    Message-----<BR><B>From:</B> Larry Bell 
+                    [mailto:larrycbell@excite.com]<BR><B>Sent:</B> Sunday, March 
+                    14, 2004 3:13 PM<BR><B>To:</B> gdiviney@comcast.net; 
+                    mike@culbertson.info; mklump@comcast.net; 
+                    robertsg@oit.edu<BR><B>Subject:</B> RE: CST 326 Deliverable 
+                    5.1<BR><BR></FONT></DIV>
+                    <TABLE cellSpacing=0 cellPadding=3 width="100%" 
+                    bgColor=white border=0>
+                      <TBODY>
+                      <TR vAlign=top>
+                        <TD width="100%"><FONT color=black size=2>My notes say 
+                          that I am to do the Instructor modify and save 
+                          questions Test Plan.<BR>Is that correct? I don't want 
+                          to duplicate anyone's work and last time (psudocode) 
+                          it ended up that 
+                          way.<BR>Thanks,<BR>Larry<BR><BR>Alternate email 
+                          addresses:<BR>lcbell@access-4-free.com<BR>lcbell44@hotmail.com<BR>9715639144@messaging.nextel.com 
+                          (direct to my phone)<BR><BR><BR>--- On Sun 03/14, 
+                          Larry Bell &lt; larrycbell@excite.com &gt; wrote:<BR>
+                          <BLOCKQUOTE 
+                          style="PADDING-LEFT: 7px; MARGIN-LEFT: 7px; BORDER-LEFT: orange 2px solid"><B>From: 
+                            </B>Larry Bell [mailto: 
+                            larrycbell@excite.com]<BR><B>To: 
+                            </B>gdiviney@comcast.net, mike@culbertson.info, 
+                            mklump@comcast.net, robertsg@oit.edu<BR><B>Date: 
+                            </B>Sun, 14 Mar 2004 17:44:15 -0500<BR><B>Subject: 
+                            </B>RE: CST 326 Final Report and Deliverable 
+                            5<BR><BR>
+                            <TABLE cellSpacing=0 cellPadding=3 width="100%" 
+                            bgColor=white border=0>
+                              <TBODY>
+                              <TR vAlign=top>
+                                <TD width="100%"><FONT color=black 
+                                size=2>Glenn<BR>Thanks for the reply.<BR>I will 
+                                write up a presentation on how we acheived 
+                                deliverable 1 including the problems 
+                                encountered.<BR>Are we going to comment on 
+                                deliverable 0 or 5?<BR>I presume that you will 
+                                be doing the schedule? Please send it out on 
+                                Monday when you are done so we can review and 
+                                comment before it is due.<BR>I don't know what 
+                                you mean in your last sentence "<FONT 
+                                color=#0000ff>I don't understand how the work 
+                                has been diverted to you". </FONT><FONT 
+                                color=#000000>Can you explain?<BR></FONT>Thanks, 
+                                <BR>Larry<BR><BR>Alternate email 
+                                addresses:<BR>lcbell@access-4-free.com<BR>lcbell44@hotmail.com<BR>9715639144@messaging.nextel.com 
+                                (direct to my phone)<BR><BR><BR>--- On Sun 
+                                03/14, Glenn Diviney &lt; gdiviney@comcast.net 
+                                &gt; wrote:<BR><BR>
+                                <BLOCKQUOTE 
+                                style="PADDING-LEFT: 7px; MARGIN-LEFT: 7px; BORDER-LEFT: orange 2px solid"><B>From: 
+                                </B>Glenn Diviney [mailto: 
+                                gdiviney@comcast.net]<BR><B>To: 
+                                </B>larrycbell@excite.com, mike@culbertson.info, 
+                                mklump@comcast.net, robertsg@oit.edu<BR><B>Date: 
+                                </B>Sat, 13 Mar 2004 21:54:52 
+                                -0800<BR><B>Subject: </B>RE: CST 326 Final 
+                                Report and Deliverable 5<BR><BR><SPAN 
+                                class=562154705-14032004><FONT face=Arial 
+                                color=#0000ff 
+                                size=2>Larry,</FONT></SPAN><BR><SPAN 
+                                class=562154705-14032004><FONT face=Arial 
+                                color=#0000ff size=2></FONT></SPAN><BR><SPAN 
+                                class=562154705-14032004><FONT face=Arial 
+                                color=#0000ff size=2>What are the deliverables 
+                                but checkpoints of the desgin process? If we 
+                                give a brief overview of each deliverable and 
+                                it's challenges then we will meet his 
+                                requirements. The schedule we did overlook, but 
+                                will take about 5 inutes to complete before next 
+                                class.</FONT></SPAN><BR><SPAN 
+                                class=562154705-14032004><FONT face=Arial 
+                                color=#0000ff size=2>We did decide what to 
+                                discuss: You will discuss how we acheived 
+                                deliverable 1, gary 3, matt 2, me 4, and mike 
+                                the servelets, PHP details and changes we 
+                                encountered. We will meet just before class 
+                                Tuesday and merge our presentation. I don't 
+                                understand how the work has been diverted to 
+                                you.</FONT></SPAN><BR><SPAN 
+                                class=562154705-14032004><FONT face=Arial 
+                                color=#0000ff size=2></FONT></SPAN><BR><SPAN 
+                                class=562154705-14032004><FONT face=Arial 
+                                color=#0000ff size=2>Glenn</FONT></SPAN><BR>
+                                <BLOCKQUOTE>
+                                <DIV class=OutlookMessageHeader dir=ltr 
+                                align=left><FONT face=Tahoma 
+                                size=2>-----Original 
+                                Message-----<BR><B>From:</B> Larry Bell 
+                                [mailto:larrycbell@excite.com]<BR><B>Sent:</B> 
+                                Saturday, March 13, 2004 3:37 PM<BR><B>To:</B> 
+                                mike@culbertson.info; gdiviney@comcast.net; 
+                                mklump@comcast.net; 
+                                robertsg@oit.edu<BR><B>Subject:</B> CST 326 
+                                Final Report and Deliverable 
+5<BR><BR></FONT><BR>
+                                <TABLE cellSpacing=0 cellPadding=3 width="100%" 
+                                bgColor=white border=0>
+                                <TBODY>
+                                <TR vAlign=top>
+                                <TD width="100%"><FONT size=2>I don't think we 
+                                need to discuss our deliverables.<BR>I asked Jay 
+                                to clarify his expectations and he said to give 
+                                a summary overview of the process that we went 
+                                through to design our project. I don't think 
+                                that discussing deliverable 1 (except for the 
+                                requirements and the use cases) would be 
+                                helpful.<BR>I think we need to make an outline 
+                                of what we want to discuss then assign who does 
+                                what sections.<BR>What are we going to do about 
+                                the schedule in Deliverable 5?<BR>I think some 
+                                team members took off too early before we really 
+                                had a good discussion about what we are going to 
+                                do. I have many questions and feel out of the 
+                                loop again. We could have done a lot of work 
+                                today as a group but now I have even more work 
+                                to do on my own. We need to be more organized 
+                                next 
+                                term.<BR><BR>Thanks,<BR>Larry<BR><BR>Alternate 
+                                email 
+                                addresses:<BR>lcbell@access-4-free.com<BR>lcbell44@hotmail.com<BR>9715639144@messaging.nextel.com 
+                                (direct to my 
+                                phone)<BR><BR></FONT></TD></TR></TBODY></TABLE>
+                                <P>
+                                <HR>
+                                <FONT face=geneva size=2><B>Join Excite! - <A 
+                                href="http://www.excite.com/" 
+                                target=_blank><FONT 
+                                color=#0033cc>http://www.excite.com</FONT></A></B><BR>The 
+                                most personalized portal on the Web!</FONT> 
+                                <BR></DIV></BLOCKQUOTE>
+                                <P></P></BLOCKQUOTE></FONT></TD></TR></TBODY></TABLE>
+                            <P>
+                            <HR>
+                            <FONT face=geneva size=2><B>Join Excite! - <A 
+                            href="http://www.excite.com/" target=_blank><FONT 
+                            color=#0033cc>http://www.excite.com</FONT></A></B><BR>The 
+                            most personalized portal on the Web!</FONT> 
+                            <P></P></BLOCKQUOTE><BR></FONT></TD></TR></TBODY></TABLE>
+                    <P>
+                    <HR>
+                    <FONT face=geneva size=2><B>Join Excite! - <A 
+                    href="http://www.excite.com/" target=_blank><FONT 
+                    color=#0033cc>http://www.excite.com</FONT></A></B><BR>The 
+                    most personalized portal on the Web!</FONT> </BLOCKQUOTE>
+                  <P></FONT></P></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<FORM name=msg_action action=msg_proc.php method=post><INPUT type=hidden 
+value=4df1a8b3a7eb3331bc1a7ea9815b4ef2 name=ArdSI> <INPUT type=hidden 
+value=4df1a8b3a7eb3331bc1a7ea9815b4ef2 name=ArdSI> <INPUT type=hidden name=act> 
+<INPUT type=hidden name=url> <INPUT type=hidden value=0|1|1 name=m_back> <INPUT 
+type=hidden name=m_to> <INPUT type=hidden value=2271 name=mid> <INPUT 
+type=hidden name=indBS> <INPUT type=hidden name=pg> 
+</FORM></BASEFONT></BODY></HTML>

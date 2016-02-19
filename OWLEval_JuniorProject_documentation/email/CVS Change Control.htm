@@ -1,0 +1,201 @@
+<html>
+<head>
+  <title>Trash Message List</title>
+<!-- INSERT META JUNK -->
+<style type=text/css>
+			/* navigation classes */
+			//body
+			//{
+			//  scrollbar-base-color: #6699CC;	
+			//}
+			.navOn
+                        {
+                          background-color: #6699CC;
+                          border: solid 2px #6699CC;
+                          border-left: solid 3px #487BAE;
+                          border-top: solid 3px #487BAE;
+                        }
+			.navOnHglt
+			{
+			  background-color: #6699CC;
+			  border: solid 2px #84B7EA;
+                          border-right: solid 3px #487BAE;
+                          border-bottom: solid 3px #487BAE;
+                        }
+			.navOff  
+                        {
+                          background-color: #E2E2E2;
+			  border: solid 2px #E2E2E2;
+                          border-left: solid 3px #CECECE;
+                          border-top: solid 3px #CECECE;
+                        }       
+                        .navOffHglt
+                        {
+                          background-color: #E2E2E2;
+			  border: solid 2px #F6F6F6;
+                          border-right: solid 3px #CECECE;
+                          border-bottom: solid 3px #CECECE;	
+                        }
+			/* folder select classes */
+			.folLst
+			{
+			  background-color: #6699CC;
+			  border-bottom: solid 1px #E2E2E2;
+			  text-decoratation: none;
+			}
+			.folLstHover
+			{
+			  background-color: #75A8DB;
+                          border-bottom: solid 1px #E2E2E2;
+			}
+			/* form element classes */
+			.btnDsp
+			{
+			  font-size: 11; 
+  			  font-family: 'geneva,arial';
+			  font-weight: bold; 
+			  color: #6699CC; 
+			  background-color: #FFFFFF;
+			}
+			.txtDsp
+                        {
+                          font-size: 12;
+                          font-family: 'geneva,arial';
+                          color: #6699CC;
+                          background-color: #FFFFFF;
+                        }
+			/* message box classes */
+			.msgBxHdr
+			{
+			  border-right: solid 2px #E2E2E2;
+			}
+			.msgBxBrdr
+			{
+			  border: 0px none ! important
+			}
+			.msgBxBdy
+			{
+			  border-right: solid 2px #E2E2E2;
+			  border-bottom: solid 3px #E2E2E2;
+			}
+			/* checkbox lists */
+			.chkBxSel
+			{
+			  background-color: #7AADE0;
+			  border-bottom: solid 1px #6699CC;
+			}
+			.chkBxDesel
+			{
+			  
+			  border-bottom: solid 1px #E2E2E2;
+			}
+			.vertSep
+			{
+			  border-left: solid 1px #6699CC;
+			}
+		</style><script language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=3&s=1&d=1&mid=955&ca=" + document.msg_list.ca.value + "&ArdSI=2424d54827960b759621b57cb44702de";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</script>
+</head>
+
+<body topmargin=3 leftmargin=3 marginheight=3 marginwidth=3  alink=ff0000 link=000066 vlink=000066><basefont face='geneva,arial'><table cellpadding=0 cellspacing=0 border=0 width=100%>
+	    <form action='' method="post" name="msg_list"><input type="hidden" name="ArdSI" value="2424d54827960b759621b57cb44702de" />
+	    <input type="hidden" name="ca" value="4"></form>
+	    <tr>
+                <td>
+		    <table cellpadding=3 cellspacing=0 border=0 width=100%>
+			<tr>
+			    <td align=right><a href='javascript:window.close();'><font size=1 face=geneva,arial>[ Close This Window ]</font></a></td>
+			</tr>
+		    </table>
+		</td>
+	    </tr><tr>
+                <td>
+		    
+		    <table cellpadding=2 cellspacing=0 border=0 width=100%>
+		        <tr valign=top bgcolor=ffffff>
+                            <td align=right><font face=geneva,arial color=black size=2><b>Date:&nbsp;&nbsp;</b></font></td>
+                            <td width=100%><font face=geneva,arial color=black size=2>Tue, 6 Apr 2004 19:29:18 -0700</font></td>
+                    	</tr>
+		    	<tr valign=top bgcolor=ffffff>
+	    	            <td align=right><font face=geneva,arial color=black size=2><b>From:&nbsp;&nbsp;</b></font></td>
+	    		    <td width=100%><font face=geneva,arial color=black size=2>Matthew Klump &lt;mklump@comcast.net&gt;<br><font size=1>[ <a href='abook.php?a=0&w=0&msg=1&m=3&mid=961&ArdSI=2424d54827960b759621b57cb44702de&ArdSI=2424d54827960b759621b57cb44702de'><font color=0000ff>Add to Address Book</font></a> | <a href='?ArdSI=2424d54827960b759621b57cb44702de' onclick="bsThis('b', 'mklump@comcast.net'); return false;"><font color=0000ff>Block Address</font></a> | <a href='?ArdSI=2424d54827960b759621b57cb44702de' onclick='rSpam(); return false;'><font color=0000ff>Report as Spam</font></a> ]</font></font></td>
+		    	</tr>
+			<tr valign=top bgcolor=ffffff>
+		            <td align=right><font face=geneva,arial color=black size=2><b>To:&nbsp;&nbsp;</b></font></td>
+      			    <td width=100%><font face=geneva,arial color=black size=2>'Gary Roberts' &lt;robertsg@oit.edu&gt;,'Glenn Diviney' &lt;gdiviney@comcast.net&gt;,'Larry Bell' &lt;larrycbell@excite.com&gt;,'Mike Culbertson' &lt;mike@culbertson.info&gt;</font></td>
+		    	</tr>
+			<tr valign=top bgcolor=ffffff>
+                            <td align=right><font face=geneva,arial color=black size=2><b>Subject:&nbsp;&nbsp;</b></font></td>
+                            <td width=100%><font face=geneva,arial color=black size=2>CVS Change Control</font></td>
+                    	</tr>
+		    </table>    
+		<font size=1><br></font></font>
+		</td>
+	    </tr><tr>
+                <td>
+                    <table cellpadding=3 cellspacing=0 border=0 width=100%>
+		        <tr bgcolor=ffffff>
+	    		    <td width=100%><font size=2><table cellpadding=0 cellspacing=0 border=0 width=100%><tr><td><font face=geneva,arial size=2>
+
+Hey guys,what did you thing about the CVS change control presentation done by the LumberJack team? Do you think that this is some thing that we could benefit from? Doyou think this is some thing we could use on Mike's Unix box for the implementation phase of our project?<BR>-Matt
+<br><br></font></td></tr></table></font></td>
+		        </tr></table>
+		</td>
+	    </tr></table><form name="msg_action" method="post" action="msg_proc.php"><input type="hidden" name="ArdSI" value="2424d54827960b759621b57cb44702de" />
+<input type="hidden" name="ArdSI" value='2424d54827960b759621b57cb44702de'>
+<input type="hidden" name="act">
+<input type="hidden" name="url">
+<input type="hidden" name="m_back" value="3|1|1">
+<input type="hidden" name="m_to">
+<input type="hidden" name="mid" value="955">
+<input type="hidden" name="indBS">
+<input type="hidden" name="pg">
+</form>
+</body>
+
+</html>

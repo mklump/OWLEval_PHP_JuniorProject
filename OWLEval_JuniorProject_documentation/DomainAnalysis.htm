@@ -1,0 +1,379 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Domain Analysis</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Larry Bell</o:Author>
+  <o:LastAuthor>Larry Bell</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>131</o:TotalTime>
+  <o:Created>2004-02-03T21:41:00Z</o:Created>
+  <o:LastSaved>2004-02-03T21:41:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>134</o:Words>
+  <o:Characters>764</o:Characters>
+  <o:Company>Intel Corporation</o:Company>
+  <o:Lines>6</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>938</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in .25in 1.0in .25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:99645588;
+	mso-list-type:hybrid;
+	mso-list-template-ids:689731400 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:141889156;
+	mso-list-type:hybrid;
+	mso-list-template-ids:633079004 67698689 67698703 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:390544684;
+	mso-list-type:hybrid;
+	mso-list-template-ids:397808982 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:453209200;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1369428346 67698703 67698689 67698703 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level3
+	{mso-level-tab-stop:117.0pt;
+	mso-level-number-position:left;
+	margin-left:117.0pt;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:611592759;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1728197554 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1372346139;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1018919164 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:1719205959;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1712166048 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l6:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7
+	{mso-list-id:1824351934;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1949526068 67698703 67698689 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l7:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:1880507552;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-366828552 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l8:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:1881698094;
+	mso-list-type:hybrid;
+	mso-list-template-ids:739304744 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l9:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10
+	{mso-list-id:2139368841;
+	mso-list-type:hybrid;
+	mso-list-template-ids:453535616 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l10:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body background=http://nelson.capital.ous.edu/~blues/dna_bkgd.gif>
+
+<!---- table setup, title, and header ------->
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="8" width=100% height="815">
+    <tr>
+      <td align="right" valign="top" width=20% bgcolor="#FFFFFF" height="91">
+	<img border="0" src="http://nelson.capital.ous.edu/~blues/oitlogo.gif" align="top" width="173" height="121"></td>
+      <td width="10" height="91">&nbsp;</td>
+      <td valign="middle" width=80% height="91" align="center"><font size="5">
+        Software Engineering Design and Implementation<br>
+        Blue Team</font></td>
+    </tr>
+
+<!---- left column links ------->
+    <tr>
+      <td valign="top" width=10% height="708"><font size="2"><strong>Software Engineering Technology</strong></font>
+<br><br>
+<a href=main_page.html>Blues Home Page</a><br>
+
+</td>
+      <td width="10" height="708">&nbsp;</td>
+      <td valign="top" width=90% height="708"><br>
+
+<!---- beginning of body text ------->
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal>Domain Analysis</p>
+
+<p class=MsoNormal>A document that identifies the context that the project
+operates in.&nbsp; It lists the interactions with other objects (software,
+hardware, processes, people) in the project's domain or scope.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo2;tab-stops:list .5in'>User –
+     Entry GUI</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l2 level1 lfo10;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Login</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l2 level1 lfo10;
+tab-stops:list .75in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Enter Evaluation Data</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l2 level1 lfo10;
+tab-stops:list .75in'><![if !supportLists]>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Select Save or Submit button</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo2;tab-stops:list .5in'>Admin
+     – Admin GUI</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:-27.0pt;mso-list:l3 level1 lfo1'><![if !supportLists]>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Login </p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:-27.0pt;mso-list:l3 level1 lfo1'><![if !supportLists]>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Enters Course information (number of students, CRN, Instructor
+Name, Term, Course Title)</p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:-27.0pt;mso-list:l3 level1 lfo1'><![if !supportLists]>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Requests to generate, save to disk, print login/password pairs</p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-indent:-27.0pt;mso-list:l3 level1 lfo1'><![if !supportLists]>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Requests narrative/numerical reports</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo1'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Instructors – Results GUI</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l5 level1 lfo9;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Login</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l5 level1 lfo9;
+tab-stops:list .75in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Receive reports</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo1;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Entry GUI – Middleware</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l8 level1 lfo3;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Login verification</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l8 level1 lfo3;
+tab-stops:list .75in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Save Evaluation</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l8 level1 lfo3;
+tab-stops:list .75in'><![if !supportLists]>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Submit Evaluation</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo1;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Admin GUI – Middleware</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l6 level1 lfo4;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Login verification</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l6 level1 lfo4;
+tab-stops:list .75in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Submit Course information</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l6 level1 lfo4;
+tab-stops:list .75in'><![if !supportLists]>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Requests login/password pairs</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l6 level1 lfo4;
+tab-stops:list .75in'><![if !supportLists]>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Requests reports</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo1;
+tab-stops:list .5in'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Results GUI – Middleware</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l9 level1 lfo5;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Login verification</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l9 level1 lfo5;
+tab-stops:list .75in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Receive reports</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo1'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Middleware – DataBase</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level1 lfo11;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Verify login.</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level1 lfo11;
+tab-stops:list .75in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Submit and receive report data</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level2 lfo1'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Middleware – randomizer</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l7 level1 lfo6;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Creates login/password pairs</p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l7 level1 lfo6;
+tab-stops:list .75in'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Store login/password pairs</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo7;tab-stops:list .5in'>Middleware
+     – report generator</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo8;
+tab-stops:list .75in'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>generate and return reports</p>
+
+</div>
+
+
+	</font></p>
+	</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

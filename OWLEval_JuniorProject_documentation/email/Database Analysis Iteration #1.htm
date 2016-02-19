@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0142)http://e20.email.excite.com/msg_read.php?m=25&s=&d=1&mid=38&pr=1&ArdSI=19164213d90ed089217dc8cb765af388&ArdSI=19164213d90ed089217dc8cb765af388 -->
+<HTML xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>CST326 Message List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- INSERT META JUNK -->
+<STYLE type=text/css>UNKNOWN {
+	SCROLLBAR-BASE-COLOR: #6699cc
+}
+.navOn {
+	BORDER-RIGHT: #6699cc 2px solid; BORDER-TOP: #487bae 3px solid; BORDER-LEFT: #487bae 3px solid; BORDER-BOTTOM: #6699cc 2px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOnHglt {
+	BORDER-RIGHT: #487bae 3px solid; BORDER-TOP: #84b7ea 2px solid; BORDER-LEFT: #84b7ea 2px solid; BORDER-BOTTOM: #487bae 3px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOff {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-TOP: #cecece 3px solid; BORDER-LEFT: #cecece 3px solid; BORDER-BOTTOM: #e2e2e2 2px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.navOffHglt {
+	BORDER-RIGHT: #cecece 3px solid; BORDER-TOP: #f6f6f6 2px solid; BORDER-LEFT: #f6f6f6 2px solid; BORDER-BOTTOM: #cecece 3px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.folLst {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #6699cc; text-decoratation: none
+}
+.folLstHover {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #75a8db
+}
+.btnDsp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.txtDsp {
+	FONT-SIZE: 12px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.msgBxHdr {
+	BORDER-RIGHT: #e2e2e2 2px solid
+}
+.msgBxBrdr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.msgBxBdy {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-BOTTOM: #e2e2e2 3px solid
+}
+.chkBxSel {
+	BORDER-BOTTOM: #6699cc 1px solid; BACKGROUND-COLOR: #7aade0
+}
+.chkBxDesel {
+	BORDER-BOTTOM: #e2e2e2 1px solid
+}
+.vertSep {
+	BORDER-LEFT: #6699cc 1px solid
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=25&s=&d=1&mid=38&ca=" + document.msg_list.ca.value + "&ArdSI=19164213d90ed089217dc8cb765af388";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2737.800" name=GENERATOR></HEAD>
+<BODY vLink=#000066 aLink=#ff0000 link=#000066 leftMargin=3 topMargin=3 
+marginwidth="3" marginheight="3"><BASEFONT face=geneva,arial>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM name=msg_list action="" method=post><INPUT type=hidden 
+  value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden value=4 
+  name=ca></FORM>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A href="javascript:window.close();"><FONT 
+            face=geneva,arial size=1>[ Close This Window 
+        ]</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=2 src="Database Analysis Iteration #1_files/spacer.gif" 
+      width=1 border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=16 
+            hspace=10 
+            src="Database Analysis Iteration #1_files/msg_flagged_no.gif" 
+            width=14 align=absMiddle border=0> Message is not flagged. [ <A 
+            onclick="chgSte('sflg'); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=black>Flag for Follow Up</FONT></A> 
+      ]</FONT></TD></TR></TBODY></TABLE><IMG height=2 
+      src="Database Analysis Iteration #1_files/spacer.gif" width=1 
+border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Date:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Thu, 19 
+            Feb 2004 16:32:17 -0800</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>From:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Matthew 
+            Klump &lt;mklump@comcast.net&gt;<BR><FONT size=1>[ <A 
+            href="http://e20.email.excite.com/abook.php?a=0&amp;w=0&amp;msg=1&amp;m=25&amp;mid=38&amp;ArdSI=19164213d90ed089217dc8cb765af388&amp;ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Add to Address Book</FONT></A> | <A 
+            onclick="bsThis('b', 'mklump@comcast.net'); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Block Address</FONT></A> | <A 
+            onclick="rSpam(); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Report as Spam</FONT></A> ]</FONT></FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>To:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>'Gary 
+            Roberts' &lt;robertsg@oit.edu&gt;,'Glenn Diviney' 
+            &lt;gdiviney@comcast.net&gt;,'Larry Bell' 
+            &lt;larrycbell@excite.com&gt;,'Mike Culbertson' 
+            &lt;mike@culbertson.info&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Subject:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Database 
+            Analysis Iteration #1</FONT></TD></TR></TBODY></TABLE><FONT 
+      size=1><BR></FONT></FONT></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD width="100%"><FONT size=2>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2><LINK 
+                  href="cid:filelist.xml@01C3F705.F00DCFC0" rel=File-List><!--[if gte mso 9]><xml><o:OfficeDocumentSettings> <o:DoNotRelyOnCSS/></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument> <w:SpellingState>Clean</w:SpellingState> <w:GrammarState>Clean</w:GrammarState> <w:DocumentKind>DocumentEmail</w:DocumentKind> <w:EnvelopeVis/> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:Compatibility>  <w:BreakWrappedTables/>  <w:SnapToGridInCell/>  <w:WrapTextWithPunct/>  <w:UseAsianBreakRules/>  <w:UseWord2002TableStyleRules/> </w:Compatibility> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false" LatentStyleCount="156"></w:LatentStyles></xml><![endif]-->
+                  <STYLE>@font-face {
+	font-family: Verdana;
+}
+@page Section1 {size: 8.5in 11.0in; margin: 1.0in 1.25in 1.0in 1.25in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; COLOR: black; FONT-FAMILY: Verdana; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-believe-normal-left: yes
+}
+LI.MsoNormal {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; COLOR: black; FONT-FAMILY: Verdana; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-believe-normal-left: yes
+}
+DIV.MsoNormal {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; COLOR: black; FONT-FAMILY: Verdana; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-believe-normal-left: yes
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.EmailStyle17 {
+	FONT-WEIGHT: normal; COLOR: navy; FONT-STYLE: normal; FONT-FAMILY: "Times New Roman"; TEXT-DECORATION: none; mso-bidi-font-family: "Times New Roman"; text-underline: none; mso-style-type: personal-compose; mso-style-noshow: yes; mso-ansi-font-size: 14.0pt; mso-bidi-font-size: 14.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; text-line-through: none
+}
+SPAN.SpellE {
+	mso-style-name: ""; mso-spl-e: yes
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+<!--[if gte mso 10]><style>/* Style Definitions */ table.MsoNormalTable	{mso-style-name:"Table Normal";	mso-tstyle-rowband-size:0;	mso-tstyle-colband-size:0;	mso-style-noshow:yes;	mso-style-parent:"";	mso-padding-alt:0in 5.4pt 0in 5.4pt;	mso-para-margin:0in;	mso-para-margin-bottom:.0001pt;	mso-pagination:widow-orphan;	font-size:10.0pt;	font-family:"Times New Roman";	mso-ansi-language:#0400;	mso-fareast-language:#0400;	mso-bidi-language:#0400;}</style><![endif]--><![if mso 9]><style>p.MsoNormal	{margin-left:51.0pt;}</style><![endif]><!--[if gte mso 9]><xml><o:shapedefaults v:ext="edit" spidmax="1026" /></xml><![endif]--><!--[if gte mso 9]><xml><o:shapelayout v:ext="edit"> <o:idmap v:ext="edit" data="1" /></o:shapelayout></xml><![endif]-->
+                  <DIV class=Section1>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>Hi Guys, DatabaseAnalysis Iteration #1 
+                  is now posted in blues/Database Analysis/ DatabaseAnalysis 
+                  Iteration #1.doc for your inspection to add or delete entries 
+                  from foriteration #2.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <DIV>
+                  <P class=MsoNormal><FONT face=Verdana color=navy size=4><SPAN 
+                  style="FONT-SIZE: 13.5pt; COLOR: navy; mso-no-proof: yes">-Matt</SPAN></FONT><o:p></o:p></P></DIV>
+                  <P class=MsoNormal><FONT face=Verdana color=black 
+                  size=2><SPANSTYLE='FONT-SIZE:10.0PT'><o:p>&nbsp;</o:p></SPAN></FONT></P></DIV>
+                  <P></FONT></P></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<FORM name=msg_action action=msg_proc.php method=post><INPUT type=hidden 
+value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden 
+value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden name=act> 
+<INPUT type=hidden name=url> <INPUT type=hidden value=25||1 name=m_back> <INPUT 
+type=hidden name=m_to> <INPUT type=hidden value=38 name=mid> <INPUT type=hidden 
+name=indBS> <INPUT type=hidden name=pg> </FORM></BASEFONT></BODY></HTML>

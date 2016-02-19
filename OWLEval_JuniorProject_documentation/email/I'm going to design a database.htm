@@ -1,0 +1,490 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0142)http://e20.email.excite.com/msg_read.php?m=25&s=&d=1&mid=40&pr=1&ArdSI=19164213d90ed089217dc8cb765af388&ArdSI=19164213d90ed089217dc8cb765af388 -->
+<HTML xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:x = 
+"urn:schemas-microsoft-com:office:excel" xmlns:st1 = 
+"urn:schemas:contacts"><HEAD><TITLE>CST326 Message List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- INSERT META JUNK -->
+<STYLE type=text/css>UNKNOWN {
+	SCROLLBAR-BASE-COLOR: #6699cc
+}
+.navOn {
+	BORDER-RIGHT: #6699cc 2px solid; BORDER-TOP: #487bae 3px solid; BORDER-LEFT: #487bae 3px solid; BORDER-BOTTOM: #6699cc 2px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOnHglt {
+	BORDER-RIGHT: #487bae 3px solid; BORDER-TOP: #84b7ea 2px solid; BORDER-LEFT: #84b7ea 2px solid; BORDER-BOTTOM: #487bae 3px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOff {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-TOP: #cecece 3px solid; BORDER-LEFT: #cecece 3px solid; BORDER-BOTTOM: #e2e2e2 2px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.navOffHglt {
+	BORDER-RIGHT: #cecece 3px solid; BORDER-TOP: #f6f6f6 2px solid; BORDER-LEFT: #f6f6f6 2px solid; BORDER-BOTTOM: #cecece 3px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.folLst {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #6699cc; text-decoratation: none
+}
+.folLstHover {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #75a8db
+}
+.btnDsp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.txtDsp {
+	FONT-SIZE: 12px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.msgBxHdr {
+	BORDER-RIGHT: #e2e2e2 2px solid
+}
+.msgBxBrdr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.msgBxBdy {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-BOTTOM: #e2e2e2 3px solid
+}
+.chkBxSel {
+	BORDER-BOTTOM: #6699cc 1px solid; BACKGROUND-COLOR: #7aade0
+}
+.chkBxDesel {
+	BORDER-BOTTOM: #e2e2e2 1px solid
+}
+.vertSep {
+	BORDER-LEFT: #6699cc 1px solid
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=25&s=&d=1&mid=40&ca=" + document.msg_list.ca.value + "&ArdSI=19164213d90ed089217dc8cb765af388";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2737.800" name=GENERATOR></HEAD>
+<BODY vLink=#000066 aLink=#ff0000 link=#000066 leftMargin=3 topMargin=3 
+marginwidth="3" marginheight="3"><BASEFONT face=geneva,arial>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM name=msg_list action="" method=post><INPUT type=hidden 
+  value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden value=4 
+  name=ca></FORM>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A href="javascript:window.close();"><FONT 
+            face=geneva,arial size=1>[ Close This Window 
+        ]</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=2 src="I'm going to design a database_files/spacer.gif" 
+      width=1 border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=16 
+            hspace=10 
+            src="I'm going to design a database_files/msg_flagged_no.gif" 
+            width=14 align=absMiddle border=0> Message is not flagged. [ <A 
+            onclick="chgSte('sflg'); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=black>Flag for Follow Up</FONT></A> 
+      ]</FONT></TD></TR></TBODY></TABLE><IMG height=2 
+      src="I'm going to design a database_files/spacer.gif" width=1 
+border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Date:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Thu, 19 
+            Feb 2004 15:31:59 -0800</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>From:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Matthew 
+            Klump &lt;mklump@comcast.net&gt;<BR><FONT size=1>[ <A 
+            href="http://e20.email.excite.com/abook.php?a=0&amp;w=0&amp;msg=1&amp;m=25&amp;mid=40&amp;ArdSI=19164213d90ed089217dc8cb765af388&amp;ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Add to Address Book</FONT></A> | <A 
+            onclick="bsThis('b', 'mklump@comcast.net'); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Block Address</FONT></A> | <A 
+            onclick="rSpam(); return false;" 
+            href="http://e20.email.excite.com/msg_read.php?ArdSI=19164213d90ed089217dc8cb765af388"><FONT 
+            color=#0000ff>Report as Spam</FONT></A> ]</FONT></FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>To:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>'Gary 
+            Roberts' &lt;robertsg@oit.edu&gt;,'Glenn Diviney' 
+            &lt;gdiviney@comcast.net&gt;,'Larry Bell' 
+            &lt;larrycbell@excite.com&gt;,'Mike Culbertson' 
+            &lt;mike@culbertson.info&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Cc:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Jay 
+            Bockelman &lt;bockelmj@oit.edu&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Subject:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>No 
+            Subject</FONT></TD></TR></TBODY></TABLE><FONT 
+  size=1><BR></FONT></FONT></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD width="100%"><FONT size=2>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2><LINK 
+                  href="cid:filelist.xml@01C3F6FD.82CBF7F0" 
+                  rel=File-List><o:SmartTagType name="GivenName" 
+                  namespaceuri="urn:schemas:contacts"></o:SmartTagType><!--[if gte mso 9]><xml><o:OfficeDocumentSettings> <o:DoNotRelyOnCSS/></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument> <w:SpellingState>Clean</w:SpellingState> <w:DocumentKind>DocumentEmail</w:DocumentKind> <w:EnvelopeVis/> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:Compatibility>  <w:BreakWrappedTables/>  <w:SnapToGridInCell/>  <w:WrapTextWithPunct/>  <w:UseAsianBreakRules/>  <w:UseWord2002TableStyleRules/> </w:Compatibility> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false" LatentStyleCount="156"></w:LatentStyles></xml><![endif]--><!--[if !mso]>
+                  <STYLE>st1\:* {
+	BEHAVIOR: url(#default#ieooui)
+}
+</STYLE>
+<![endif]-->
+                  <STYLE>@font-face {
+	font-family: Verdana;
+}
+@page Section1 {size: 8.5in 11.0in; margin: 1.0in 1.25in 1.0in 1.25in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; COLOR: black; FONT-FAMILY: Verdana; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-believe-normal-left: yes
+}
+LI.MsoNormal {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; COLOR: black; FONT-FAMILY: Verdana; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-believe-normal-left: yes
+}
+DIV.MsoNormal {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; COLOR: black; FONT-FAMILY: Verdana; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times New Roman"; mso-believe-normal-left: yes
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.EmailStyle17 {
+	FONT-WEIGHT: normal; COLOR: navy; FONT-STYLE: normal; FONT-FAMILY: "Times New Roman"; TEXT-DECORATION: none; mso-bidi-font-family: "Times New Roman"; text-underline: none; mso-style-type: personal-compose; mso-style-noshow: yes; mso-ansi-font-size: 14.0pt; mso-bidi-font-size: 14.0pt; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"; mso-text-animation: none; text-line-through: none
+}
+DIV.Section1 {
+	page: Section1
+}
+OL {
+	MARGIN-BOTTOM: 0in
+}
+UL {
+	MARGIN-BOTTOM: 0in
+}
+</STYLE>
+<!--[if gte mso 10]><style>/* Style Definitions */ table.MsoNormalTable	{mso-style-name:"Table Normal";	mso-tstyle-rowband-size:0;	mso-tstyle-colband-size:0;	mso-style-noshow:yes;	mso-style-parent:"";	mso-padding-alt:0in 5.4pt 0in 5.4pt;	mso-para-margin:0in;	mso-para-margin-bottom:.0001pt;	mso-pagination:widow-orphan;	font-size:10.0pt;	font-family:"Times New Roman";	mso-ansi-language:#0400;	mso-fareast-language:#0400;	mso-bidi-language:#0400;}</style><![endif]--><![if mso 9]><style>p.MsoNormal	{margin-left:51.0pt;}</style><![endif]><!--[if gte mso 9]><xml><o:shapedefaults v:ext="edit" spidmax="1026" /></xml><![endif]--><!--[if gte mso 9]><xml><o:shapelayout v:ext="edit"> <o:idmap v:ext="edit" data="1" /></o:shapelayout></xml><![endif]-->
+                  <DIV class=Section1>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>Hi thereeveryone, I’m sure all of you 
+                  and myself came to a rather quickconclusion when I had 
+                  announced “I’m going to design 
+                  adatabase!”<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>Relying onmuch reflection/reassessment 
+                  done yesterday on our documentation alreadyposted, I would 
+                  like to propose the following modifications to 
+                  ourdocumentation.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>#1<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>In thedocument &lt;Requirements.htm&gt; 
+                  for requirements, I would like to suggest achange on 
+                  requirement 8.3, instead of being “Shall work correctly,”I 
+                  propose to change this requirement to “Shall correctly satisfy 
+                  acomplete set of validation tests designed to prove each 
+                  separate requirementoutline in this 
+                  document.”<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>#2<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>In thedocument &lt;Matrix.xls&gt; for 
+                  skills required to contribute successfully tothe project, I 
+                  have to stress the need to change the statement outlined 
+                  by“Skills needed to complete our project:” right now as 
+                  “SQL,PHP, and possibly PERL” to “SQL, HTML, C#, possibly PHP, 
+                  andpossibly PERL.”<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>The reasonfor this specific change is 
+                  five fold:<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; mso-list: l0 level1 lfo2; tab-stops: list .5in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">1.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">It 
+                  is my belief that the entireproject could be could be 
+                  constructed from start to finish with just SQL, HTML,and 
+                  C#.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; mso-list: l0 level1 lfo2; tab-stops: list .5in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">2.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">In 
+                  the document &lt;</SPAN></FONT> <FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">risk_analysis.htm 
+                  &gt; <st1:GivenNamew:st="on">Glenn</st1:GivenNamew:st="on"> 
+                  outlined the catastrophic risk “Nolanguage experience” as a 
+                  50% change, and the critical risk“Inadequate language 
+                  proficiency” as another 50% 
+                  chance!<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; mso-list: l0 level1 lfo2; tab-stops: list .5in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">3.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">It 
+                  is also my belief that thestatements “Learn necessary skill” 
+                  and “Use parallelprogramming, more than one developer on each 
+                  task” has truth. However,learning a new language like PHP 
+                  before you learn HTML, and PERL before youknow C# and VB is 
+                  quite a daunting task if you know nothing of the 
+                  preliminarylanguages and poses another significant risk to 
+                  over running the project 
+deadline!<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; mso-list: l0 level1 lfo2; tab-stops: list .5in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">4.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">Changing 
+                  the required language skillsto a base line of tools that 
+                  everyone posses will provide for us a“standard” everyone can 
+                  use for this project.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 0.5in; TEXT-INDENT: -0.25in; mso-list: l0 level1 lfo2; tab-stops: list .5in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">5.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">For 
+                  the proposed base language tools,SQL, HTML, and C#, I have a 
+                  number of tools that I’d enjoy sharing withthe rest of you 
+                  guys:<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 1in; TEXT-INDENT: -0.25in; mso-list: l0 level2 lfo2; tab-stops: list 1.0in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">a.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">Dream 
+                  Weaver 4.0 to emulate theconstruction of HTML pages 
+                  functioning as an RDBMS server 
+                  application.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 1in; TEXT-INDENT: -0.25in; mso-list: l0 level2 lfo2; tab-stops: list 1.0in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">b.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">Microsoft 
+                  Office Front PageProfessional 2003 as another possibility for 
+                  simple HTML editing needs.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 1in; TEXT-INDENT: -0.25in; mso-list: l0 level2 lfo2; tab-stops: list 1.0in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">c.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">HTML 
+                  &amp; XHTML The definitive guideby Musciano &amp; Kennedy, 
+                  available on amazon.com for $27.00 with free fiveday 
+                  shipping.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 1in; TEXT-INDENT: -0.25in; mso-list: l0 level2 lfo2; tab-stops: list 1.0in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">d.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><st1:GivenNamew:st="on"><FONT 
+                  face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? 
+                  New>Glenn</SPAN></FONT></st1:GivenNamew:st="on"><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"> 
+                  and I both have complete SQL guidesif anybody doesn’t have 
+                  one.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal 
+                  style="MARGIN-LEFT: 1in; TEXT-INDENT: -0.25in; mso-list: l0 level2 lfo2; tab-stops: list 1.0in"><![if !supportLists]><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"><SPAN 
+                  style="mso-list: Ignore">e.<FONT face="Times New Roman" 
+                  size=1><SPANSTYLE='FONT:7.0PT New Roman?? 
+                  ?Times>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  </SPAN></FONT></SPAN></SPAN></FONT><![endif]><FONTSIZE=4 
+                  face="Times New Roman" color="navy"><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">I 
+                  have several C# guides I’mwilling to lend for the purpose of 
+                  completing our project.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>In regard tocreating a “first mock 
+                  database design” I need you guys to knowthat I feel it is 
+                  imperative that we seek permission from Lonnie Bradshaw downin 
+                  Klamath Falls for a complete SQL database sample including 
+                  attributes andexcluding actual data except for a John Doe data 
+                  entry.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><st1:GivenName w:st="on"><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'">Jay</SPAN></FONT></st1:GivenName><FONT 
+                  color=#0aac00 size=4 New Roman?><SPAN 
+                  style="FONT-SIZE: 14pt; COLOR: navy; FONT-FAMILY: 'Times New Roman'"> 
+                  if your reading this, I understand that it would be 
+                  moreappropriate to go through you to complete this detail. 
+                  However, I hadoriginally been in contact with <st1:GivenName 
+                  w:st="on">Lonnie</st1:GivenName>on January, 22<SUP>nd</SUP>, 
+                  so if its okay, I’d like to get a hold ofher 
+                  directly.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>Guys, I’lltry to have to have the first 
+                  mock design completed and posted by this Sundaynight. <I 
+                  style="mso-bidi-font-style: normal"><SPAN 
+                  style="FONT-STYLE: italic; mso-bidi-font-style: normal">I will 
+                  base the first mockup on the objects we hadso identified in 
+                  deliverable 2.1</SPAN></I>. Please let me know if you 
+                  feelthere is something critical we may need in the first 
+                  mockup.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>At this pointI obviously need each one 
+                  of you guys to respond to this email as you read thissome time 
+                  before next Tuesday, because we’re all going to be 
+                  individuallyinterviewed by Jay next week to see were each one 
+                  of us feels we are with theproject as well as having to turn 
+                  in deliverable #4. <o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New>I enjoy doingthis project and will see 
+                  you next time.<o:p></o:p></SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" color=navy 
+                  size=4><SPANSTYLE='FONT-SIZE:14.0PT;FONT-FAMILY:"TIMES 
+                  Roman?;color:navy? New><o:p>&nbsp;</o:p></SPAN></FONT></P>
+                  <DIV>
+                  <DIV>
+                  <P class=MsoNormal><FONT face=Verdana color=navy size=4><SPAN 
+                  style="FONT-SIZE: 13.5pt; COLOR: navy; mso-no-proof: yes">-Matt</SPAN></FONT><o:p></o:p></P></DIV></DIV>
+                  <P class=MsoNormal><FONT face=Verdana color=black 
+                  size=2><SPANSTYLE='FONT-SIZE:10.0PT'><o:p>&nbsp;</o:p></SPAN></FONT></P></DIV>
+                  <P></FONT></P></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<FORM name=msg_action action=msg_proc.php method=post><INPUT type=hidden 
+value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden 
+value=19164213d90ed089217dc8cb765af388 name=ArdSI> <INPUT type=hidden name=act> 
+<INPUT type=hidden name=url> <INPUT type=hidden value=25||1 name=m_back> <INPUT 
+type=hidden name=m_to> <INPUT type=hidden value=40 name=mid> <INPUT type=hidden 
+name=indBS> <INPUT type=hidden name=pg> </FORM></BASEFONT></BODY></HTML>

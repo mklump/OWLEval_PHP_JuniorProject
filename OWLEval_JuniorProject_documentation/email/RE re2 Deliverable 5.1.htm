@@ -1,0 +1,592 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0144)http://e22.email.excite.com/msg_read.php?m=0&s=1&d=1&mid=2270&pr=1&ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2&ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2 -->
+<HTML xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>Inbox Message List</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><!-- INSERT META JUNK -->
+<STYLE type=text/css>UNKNOWN {
+	SCROLLBAR-BASE-COLOR: #6699cc
+}
+.navOn {
+	BORDER-RIGHT: #6699cc 2px solid; BORDER-TOP: #487bae 3px solid; BORDER-LEFT: #487bae 3px solid; BORDER-BOTTOM: #6699cc 2px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOnHglt {
+	BORDER-RIGHT: #487bae 3px solid; BORDER-TOP: #84b7ea 2px solid; BORDER-LEFT: #84b7ea 2px solid; BORDER-BOTTOM: #487bae 3px solid; BACKGROUND-COLOR: #6699cc
+}
+.navOff {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-TOP: #cecece 3px solid; BORDER-LEFT: #cecece 3px solid; BORDER-BOTTOM: #e2e2e2 2px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.navOffHglt {
+	BORDER-RIGHT: #cecece 3px solid; BORDER-TOP: #f6f6f6 2px solid; BORDER-LEFT: #f6f6f6 2px solid; BORDER-BOTTOM: #cecece 3px solid; BACKGROUND-COLOR: #e2e2e2
+}
+.folLst {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #6699cc; text-decoratation: none
+}
+.folLstHover {
+	BORDER-BOTTOM: #e2e2e2 1px solid; BACKGROUND-COLOR: #75a8db
+}
+.btnDsp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.txtDsp {
+	FONT-SIZE: 12px; COLOR: #6699cc; FONT-FAMILY: geneva,arial; BACKGROUND-COLOR: #ffffff
+}
+.msgBxHdr {
+	BORDER-RIGHT: #e2e2e2 2px solid
+}
+.msgBxBrdr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.msgBxBdy {
+	BORDER-RIGHT: #e2e2e2 2px solid; BORDER-BOTTOM: #e2e2e2 3px solid
+}
+.chkBxSel {
+	BORDER-BOTTOM: #6699cc 1px solid; BACKGROUND-COLOR: #7aade0
+}
+.chkBxDesel {
+	BORDER-BOTTOM: #e2e2e2 1px solid
+}
+.vertSep {
+	BORDER-LEFT: #6699cc 1px solid
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+//caVal = 3;
+function deleteMsgs() {
+        f = document.msg_action;
+	f.act.value = 'del';
+        f.submit();
+}
+function moveMsgs(dest) {
+	
+        f = document.msg_action;
+        g = document.msg_list.msg_move;
+	f.m_to.value = dest.options[dest.selectedIndex].value;
+	if ( f.m_to.value == 'ARD' ) return false;
+	f.act.value = 'mve';
+        f.submit();
+}
+function caTog(dest) {
+ 	document.msg_list.ca.value = dest.options[dest.selectedIndex].value;
+}
+function forwardMsgs() {
+	location.href = "compose.php?m=0&s=1&d=1&mid=2270&ca=" + document.msg_list.ca.value + "&ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2";
+}
+function bsThis( type, addy ) {
+	m = document.msg_action;
+	m.action = 'prefs.php';
+	m.indBS.value = addy;
+	m.act.value = (type == 's')?'nspm':'blk';
+	m.pg.value = (type == 's')?4:5;
+	m.submit();
+}
+function chgSte (pg) {
+                
+	f = document.msg_action;
+	f.pg.value  = pg;
+     	f.act.value = 'ufs';
+     	f.url.value = escape(document.URL);
+        f.submit();
+}
+function rSpam() {
+	if (confirm("Are you sure you want to report this message as Spam?")) {
+		m = document.msg_action;
+		m.act.value = 'spm';
+        	m.submit();
+	} else 
+		return false;
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR></HEAD>
+<BODY vLink=#000066 aLink=#ff0000 link=#000066 leftMargin=3 topMargin=3 
+marginwidth="3" marginheight="3"><BASEFONT face=geneva,arial>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM name=msg_list action="" method=post><INPUT type=hidden 
+  value=4df1a8b3a7eb3331bc1a7ea9815b4ef2 name=ArdSI> <INPUT type=hidden value=4 
+  name=ca></FORM>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A href="javascript:window.close();"><FONT 
+            face=geneva,arial size=1>[ Close This Window 
+        ]</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=2 src="RE re2 Deliverable 5.1_files/spacer.gif" width=1 
+      border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD><FONT face=geneva,arial color=black size=2><IMG height=16 
+            hspace=10 src="RE re2 Deliverable 5.1_files/msg_flagged_no.gif" 
+            width=14 align=absMiddle border=0> Message is not flagged. [ <A 
+            onclick="chgSte('sflg'); return false;" 
+            href="http://e22.email.excite.com/msg_read.php?ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=black>Flag for Follow Up</FONT></A> 
+      ]</FONT></TD></TR></TBODY></TABLE><IMG height=2 
+      src="RE re2 Deliverable 5.1_files/spacer.gif" width=1 border=0><BR>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Date:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Sun, 14 
+            Mar 2004 17:05:47 -0800</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>From:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>Gary W. 
+            Roberts &lt;robertsg@oit.edu&gt;<BR><FONT size=1>[ <A 
+            href="http://e22.email.excite.com/abook.php?a=0&amp;w=0&amp;msg=1&amp;m=0&amp;mid=2270&amp;ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2&amp;ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=#0000ff>Add to Address Book</FONT></A> | <A 
+            onclick="bsThis('b', 'robertsg@oit.edu'); return false;" 
+            href="http://e22.email.excite.com/msg_read.php?ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=#0000ff>Block Address</FONT></A> | <A 
+            onclick="rSpam(); return false;" 
+            href="http://e22.email.excite.com/msg_read.php?ArdSI=4df1a8b3a7eb3331bc1a7ea9815b4ef2"><FONT 
+            color=#0000ff>Report as Spam</FONT></A> ]</FONT></FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>To:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black 
+            size=2>&lt;larrycbell@excite.com&gt;, &lt;gdiviney@comcast.net&gt;, 
+            &lt;mike@culbertson.info&gt;, &lt;mklump@comcast.net&gt;, 
+            &lt;robertsg@oit.edu&gt;</FONT></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD align=right><FONT face=geneva,arial color=black 
+            size=2><B>Subject:&nbsp;&nbsp;</B></FONT></TD>
+          <TD width="100%"><FONT face=geneva,arial color=black size=2>RE: CST 
+            326 Deliverable 5.1</FONT></TD></TR></TBODY></TABLE><FONT 
+      size=1><BR></FONT></FONT></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD width="100%"><FONT size=2>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><FONT face=geneva,arial size=2><LINK 
+                  href="cid:filelist.xml@01C409E6.948DDE30" rel=File-List><LINK 
+                  href="cid:editdata.mso@01C409E6.948DDE30" rel=Edit-Time-Data><!--[if !mso]>
+                  <STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml><o:OfficeDocumentSettings> <o:DoNotRelyOnCSS/></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument> <w:Zoom>0</w:Zoom> <w:DocumentKind>DocumentEmail</w:DocumentKind> <w:EnvelopeVis/> <w:DrawingGridHorizontalSpacing>3.9 pt</w:DrawingGridHorizontalSpacing> <w:DrawingGridVerticalSpacing>5.3 pt</w:DrawingGridVerticalSpacing></w:WordDocument></xml><![endif]-->
+                  <STYLE>@font-face {
+	font-family: Geneva;
+}
+@font-face {
+	font-family: Trebuchet MS;
+}
+@font-face {
+	font-family: Papyrus;
+}
+@font-face {
+	font-family: Tahoma;
+}
+@page Section1 {size: 8.5in 11.0in; margin: .5in .7in .5in 1.0in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+P.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly; mso-bidi-font-size: 12.0pt
+}
+LI.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly; mso-bidi-font-size: 12.0pt
+}
+DIV.MsoEnvelopeAddress {
+	FONT-SIZE: 14pt; MARGIN: 0in 0in 0pt 2in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-element: frame; mso-element-frame-width: 5.5in; mso-element-frame-height: 99.0pt; mso-element-frame-hspace: 9.0pt; mso-element-wrap: auto; mso-element-anchor-horizontal: page; mso-element-left: center; mso-element-top: bottom; mso-height-rule: exactly; mso-bidi-font-size: 12.0pt
+}
+P.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoEnvelopeReturn {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+P.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoAutoSig {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+P {
+	FONT-SIZE: 12pt; MARGIN-LEFT: 0in; MARGIN-RIGHT: 0in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto
+}
+P.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-style-name: code; mso-bidi-font-family: "Times New Roman"
+}
+LI.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-style-name: code; mso-bidi-font-family: "Times New Roman"
+}
+DIV.code {
+	FONT-SIZE: 10pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Courier New"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-style-name: code; mso-bidi-font-family: "Times New Roman"
+}
+SPAN.EmailStyle21 {
+	COLOR: navy; mso-bidi-font-family: Arial; mso-style-type: personal-reply; mso-ansi-font-size: 11.0pt; mso-ascii-font-family: "Trebuchet MS"; mso-hansi-font-family: "Trebuchet MS"
+}
+DIV.Section1 {
+	page: Section1
+}
+OL {
+	MARGIN-BOTTOM: 0in
+}
+UL {
+	MARGIN-BOTTOM: 0in
+}
+</STYLE>
+
+                  <DIV class=Section1>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt">Larry 
+                  ~<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt">I’m 
+                  not sure what your part is, but mine is 
+                  <o:p></o:p></SPAN></FONT></SPAN></P>
+                  <OL style="mso-margin-top-alt: 0in" type=1>
+                    <LI class=MsoNormal 
+                    style="COLOR: navy; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN 
+                    class=EmailStyle21><FONT face="Trebuchet MS" color=navy 
+                    size=2><SPAN 
+                    style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt">non-Student 
+                    login<o:p></o:p></SPAN></FONT></SPAN>
+                    <LI class=MsoNormal 
+                    style="COLOR: navy; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN 
+                    class=EmailStyle21><FONT face="Trebuchet MS" color=navy 
+                    size=2><SPAN 
+                    style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt">Menu<o:p></o:p></SPAN></FONT></SPAN>
+                    <LI class=MsoNormal 
+                    style="COLOR: navy; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN 
+                    class=EmailStyle21><FONT face="Trebuchet MS" color=navy 
+                    size=2><SPAN 
+                    style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt">view 
+                    <SPAN style="mso-spacerun: yes">&nbsp;</SPAN>evaluation 
+                    results<o:p></o:p></SPAN></FONT></SPAN></LI></OL>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt">This 
+                  according to what we decided last Tuesday onthe flow 
+                  diagram;<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN><A 
+                  href="http://nelson.capital.ous.edu/~blues/owleval_flow.bmp" 
+                  target=_blank><FONT 
+                  color=#0033cc>http://nelson.capital.ous.edu/~blues/owleval_flow.bmp</FONT></A><o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><SPAN class=EmailStyle21><FONT 
+                  color=#0ae00c size=2 MS?><SPAN 
+                  style="FONT-SIZE: 11pt; FONT-FAMILY: 'Trebuchet MS'; mso-bidi-font-size: 12.0pt">K 
+                  ?,<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoAutoSig><!--[if supportFields]><span class=EmailStyle21><font size=2 color=navy face="Trebuchet MS"><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Trebuchet MS"'><span style='mso-element:field-begin'></span><span style="mso-spacerun: yes">&nbsp;</span>AUTOTEXTLIST \s &quot;E-mail Signature&quot; <span style='mso-element:field-separator'></span></span></font></span><![endif]--><B><I><FONTCOLOR=NAVY 
+                  face="Papyrus"><SPAN 
+                  style="FONT-WEIGHT: bold; COLOR: navy; FONT-STYLE: italic; FONT-FAMILY: Papyrus"><SPAN 
+                  style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Gary</SPAN></FONT></I></B><B><I><FONTCOLOR=NAVY 
+                  face="Papyrus"><SPAN 
+                  style="FONT-WEIGHT: bold; COLOR: navy; FONT-STYLE: italic; FONT-FAMILY: Papyrus; mso-color-alt: windowtext"><o:p></o:p></SPAN></FONT></I></B></P>
+                  <P class=MsoNormal><!--[if supportFields]><span class=EmailStyle21><font size=2 color=navy face="Trebuchet MS"><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Trebuchet MS"'><span style='mso-element:field-end'></span></span></font></span><![endif]--><SPANCLASS=EMAILSTYLE21><FONT 
+                  face="Trebuchet MS" color=navy 
+                  size=2><SPANSTYLE='FONT-SIZE:11.0PT;MSO-BIDI-FONT-SIZE:12.0PT;FONT-FAMILY:"TREBUCHET 
+                  MS??><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></FONT></SPAN></P>
+                  <P class=MsoNormal><FONT face=Tahoma color=black size=2><SPAN 
+                  style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma">-----Original 
+                  Message-----<BR><B><SPAN 
+                  style="FONT-WEIGHT: bold">From:</SPAN></B> Larry 
+                  Bell[mailto:larrycbell@excite.com]<BR><B><SPAN 
+                  style="FONT-WEIGHT: bold">Sent:</SPAN></B> Sunday, March 14, 
+                  2004 3:13PM<BR><B><SPAN 
+                  style="FONT-WEIGHT: bold">To:</SPAN></B> 
+                  gdiviney@comcast.net;mike@culbertson.info; mklump@comcast.net; 
+                  robertsg@oit.edu<BR><B><SPAN 
+                  style="FONT-WEIGHT: bold">Subject:</SPAN></B> RE: CST 326 
+                  Deliverable5.1</SPAN></FONT></P>
+                  <P class=MsoNormal><FONT face="Times New Roman" size=3><SPAN 
+                  style="FONT-SIZE: 12pt"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></FONT></P>
+                  <TABLE 
+                  style="BACKGROUND: white; WIDTH: 100%; mso-cellspacing: 0in; mso-padding-alt: 2.25pt 2.25pt 2.25pt 2.25pt" 
+                  cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD 
+                      style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; WIDTH: 100%; PADDING-TOP: 2.25pt" 
+                      vAlign=top width="100%">
+                        <P class=MsoNormal><FONT face="Times New Roman" 
+                        color=black size=2><SPAN 
+                        style="FONT-SIZE: 10pt; COLOR: black">My notes say that 
+                        I am to do the Instructor modify and save questions Test 
+                        Plan.<BR>Is that correct? I don't want to duplicate 
+                        anyone's work and last time (psudocode) it ended up that 
+                        way.<BR>Thanks,<BR>Larry<BR><BR>Alternate email 
+                        addresses:<BR>lcbell@access-4-free.com<BR>lcbell44@hotmail.com<BR>9715639144@messaging.nextel.com 
+                        (direct to my phone)<BR><BR><BR>--- On Sun 03/14, Larry 
+                        Bell &lt; larrycbell@excite.com &gt; 
+                        wrote:<o:p></o:p></SPAN></FONT></P>
+                        <DIV 
+                        style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 5pt; PADDING-BOTTOM: 0in; BORDER-LEFT: orange 1.5pt solid; PADDING-TOP: 0in; BORDER-BOTTOM: medium none">
+                        <P class=MsoNormal 
+                        style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; MARGIN-BOTTOM: 12pt; PADDING-BOTTOM: 0in; MARGIN-LEFT: 5.25pt; BORDER-LEFT: medium none; MARGIN-RIGHT: 0.5in; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; mso-margin-top-alt: auto; mso-padding-alt: 0in 0in 0in 5.0pt; mso-border-left-alt: solid orange 1.5pt"><B><FONT 
+                        face="Times New Roman" color=black size=2><SPAN 
+                        style="FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black">From: 
+                        </SPAN></FONT></B><FONT color=black size=2><SPAN 
+                        style="FONT-SIZE: 10pt; COLOR: black">Larry Bell 
+                        [mailto: larrycbell@excite.com]<BR><B><SPAN 
+                        style="FONT-WEIGHT: bold">To: 
+                        </SPAN></B>gdiviney@comcast.net, mike@culbertson.info, 
+                        mklump@comcast.net, robertsg@oit.edu<BR><B><SPAN 
+                        style="FONT-WEIGHT: bold">Date: </SPAN></B>Sun, 14 Mar 
+                        2004 17:44:15 -0500<BR><B><SPAN 
+                        style="FONT-WEIGHT: bold">Subject: </SPAN></B>RE: CST 
+                        326 Final Report and Deliverable 
+                        5<o:p></o:p></SPAN></FONT></P></DIV>
+                        <TABLE 
+                        style="BACKGROUND: white; MARGIN-LEFT: 5.25pt; WIDTH: 100%; mso-cellspacing: 0in; mso-padding-alt: 2.25pt 2.25pt 2.25pt 2.25pt" 
+                        cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                          <TR>
+                            <TD 
+                            style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; WIDTH: 100%; PADDING-TOP: 2.25pt" 
+                            vAlign=top width="100%">
+                              <P class=MsoNormal 
+                              style="MARGIN-BOTTOM: 12pt"><FONT 
+                              face="Times New Roman" color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black">Glenn<BR>Thanks 
+                              for the reply.<BR>I will write up a presentation 
+                              on how we acheived deliverable 1 including the 
+                              problems encountered.<BR>Are we going to comment 
+                              on deliverable 0 or 5?<BR>I presume that you will 
+                              be doing the schedule? Please send it out on 
+                              Monday when you are done so we can review and 
+                              comment before it is due.<BR>I don't know what you 
+                              mean in your last sentence "</SPAN></FONT><FONT 
+                              color=blue size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: blue">I don't 
+                              understand how the work has been diverted to you". 
+                              </SPAN></FONT><FONT color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black">Can you 
+                              explain?<BR>Thanks, <BR>Larry<BR><BR>Alternate 
+                              email 
+                              addresses:<BR>lcbell@access-4-free.com<BR>lcbell44@hotmail.com<BR>9715639144@messaging.nextel.com 
+                              (direct to my phone)<BR><BR><BR>--- On Sun 03/14, 
+                              Glenn Diviney &lt; gdiviney@comcast.net &gt; 
+                              wrote:<o:p></o:p></SPAN></FONT></P>
+                              <DIV 
+                              style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 5pt; PADDING-BOTTOM: 0in; BORDER-LEFT: orange 1.5pt solid; PADDING-TOP: 0in; BORDER-BOTTOM: medium none">
+                              <P class=MsoNormal 
+                              style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; MARGIN-LEFT: 5.25pt; BORDER-LEFT: medium none; MARGIN-RIGHT: 0.5in; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-padding-alt: 0in 0in 0in 5.0pt; mso-border-left-alt: solid orange 1.5pt"><B><FONT 
+                              face="Times New Roman" color=black size=2><SPAN 
+                              style="FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black">From: 
+                              </SPAN></FONT></B><FONT color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black">Glenn 
+                              Diviney [mailto: gdiviney@comcast.net]<BR><B><SPAN 
+                              style="FONT-WEIGHT: bold">To: 
+                              </SPAN></B>larrycbell@excite.com, 
+                              mike@culbertson.info, mklump@comcast.net, 
+                              robertsg@oit.edu<BR><B><SPAN 
+                              style="FONT-WEIGHT: bold">Date: </SPAN></B>Sat, 13 
+                              Mar 2004 21:54:52 -0800<BR><B><SPAN 
+                              style="FONT-WEIGHT: bold">Subject: </SPAN></B>RE: 
+                              CST 326 Final Report and Deliverable 
+                              5<BR><BR></SPAN></FONT><FONT face=Arial color=blue 
+                              size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">Larry,</SPAN></FONT><FONT 
+                              color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black"><BR><BR></SPAN></FONT><FONT 
+                              face=Arial color=blue size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">What 
+                              are the deliverables but checkpoints of the desgin 
+                              process? If we give a brief overview of each 
+                              deliverable and it's challenges then we will meet 
+                              his requirements. The schedule we did overlook, 
+                              but will take about 5 inutes to complete before 
+                              next class.</SPAN></FONT><FONT color=black 
+                              size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black"><BR></SPAN></FONT><FONT 
+                              face=Arial color=blue size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">We 
+                              did decide what to discuss: You will discuss how 
+                              we acheived deliverable 1, gary 3, matt 2, me 4, 
+                              and mike the servelets, PHP details and changes we 
+                              encountered. We will meet just before class 
+                              Tuesday and merge our presentation. I don't 
+                              understand how the work has been diverted to 
+                              you.</SPAN></FONT><FONT color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black"><BR><BR></SPAN></FONT><FONT 
+                              face=Arial color=blue size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">Glenn</SPAN></FONT><FONT 
+                              color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black"><o:p></o:p></SPAN></FONT></P></DIV>
+                              <DIV 
+                              style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 5pt; PADDING-BOTTOM: 0in; BORDER-LEFT: orange 1.5pt solid; PADDING-TOP: 0in; BORDER-BOTTOM: medium none">
+                              <P class=MsoNormal 
+                              style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; MARGIN-BOTTOM: 12pt; PADDING-BOTTOM: 0in; MARGIN-LEFT: 41.25pt; BORDER-LEFT: medium none; MARGIN-RIGHT: 1in; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; mso-margin-top-alt: auto; mso-padding-alt: 0in 0in 0in 5.0pt; mso-border-left-alt: solid orange 1.5pt"><FONT 
+                              face=Tahoma color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma">-----Original 
+                              Message-----<BR><B><SPAN 
+                              style="FONT-WEIGHT: bold">From:</SPAN></B> Larry 
+                              Bell [mailto:larrycbell@excite.com]<BR><B><SPAN 
+                              style="FONT-WEIGHT: bold">Sent:</SPAN></B> 
+                              Saturday, March 13, 2004 3:37 PM<BR><B><SPAN 
+                              style="FONT-WEIGHT: bold">To:</SPAN></B> 
+                              mike@culbertson.info; gdiviney@comcast.net; 
+                              mklump@comcast.net; robertsg@oit.edu<BR><B><SPAN 
+                              style="FONT-WEIGHT: bold">Subject:</SPAN></B> CST 
+                              326 Final Report and Deliverable 5<BR 
+                              style="mso-special-character: line-break"><![if !supportLineBreakNewLine]><BR 
+                              style="mso-special-character: line-break"><![endif]></SPAN></FONT><FONT 
+                              color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black"><o:p></o:p></SPAN></FONT></P></DIV>
+                              <TABLE 
+                              style="BACKGROUND: white; MARGIN-LEFT: 41.25pt; WIDTH: 100%; mso-cellspacing: 0in; mso-padding-alt: 2.25pt 2.25pt 2.25pt 2.25pt" 
+                              cellSpacing=0 cellPadding=0 width="100%" 
+                                border=0><TBODY>
+                                <TR>
+                                <TD 
+                                style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; WIDTH: 100%; PADDING-TOP: 2.25pt" 
+                                vAlign=top width="100%">
+                                <P class=MsoNormal 
+                                style="MARGIN-BOTTOM: 12pt"><FONT 
+                                face="Times New Roman" color=black size=2><SPAN 
+                                style="FONT-SIZE: 10pt; COLOR: black">I don't 
+                                think we need to discuss our deliverables.<BR>I 
+                                asked Jay to clarify his expectations and he 
+                                said to give a summary overview of the process 
+                                that we went through to design our project. I 
+                                don't think that discussing deliverable 1 
+                                (except for the requirements and the use cases) 
+                                would be helpful.<BR>I think we need to make an 
+                                outline of what we want to discuss then assign 
+                                who does what sections.<BR>What are we going to 
+                                do about the schedule in Deliverable 5?<BR>I 
+                                think some team members took off too early 
+                                before we really had a good discussion about 
+                                what we are going to do. I have many questions 
+                                and feel out of the loop again. We could have 
+                                done a lot of work today as a group but now I 
+                                have even more work to do on my own. We need to 
+                                be more organized next 
+                                term.<BR><BR>Thanks,<BR>Larry<BR><BR>Alternate 
+                                email 
+                                addresses:<BR>lcbell@access-4-free.com<BR>lcbell44@hotmail.com<BR>9715639144@messaging.nextel.com 
+                                (direct to my phone)</SPAN></FONT><FONT 
+                                color=black><SPAN 
+                                style="COLOR: black; mso-color-alt: windowtext"><o:p></o:p></SPAN></FONT></P></TD></TR></TBODY></TABLE>
+                              <DIV 
+                              style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 5pt; PADDING-BOTTOM: 0in; BORDER-LEFT: orange 1.5pt solid; PADDING-TOP: 0in; BORDER-BOTTOM: medium none">
+                              <DIV class=MsoNormal 
+                              style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; MARGIN-LEFT: 41.25pt; BORDER-LEFT: medium none; MARGIN-RIGHT: 1in; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-padding-alt: 0in 0in 0in 5.0pt; mso-border-left-alt: solid orange 1.5pt" 
+                              align=center><FONT face="Times New Roman" 
+                              color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black">
+                              <HR align=center width="100%" SIZE=2>
+                              </SPAN></FONT></DIV>
+                              <P class=MsoNormal 
+                              style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; MARGIN-LEFT: 41.25pt; BORDER-LEFT: medium none; MARGIN-RIGHT: 1in; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-padding-alt: 0in 0in 0in 5.0pt; mso-border-left-alt: solid orange 1.5pt"><B><FONT 
+                              face=Geneva color=black size=2><SPAN 
+                              style="FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Geneva">Join 
+                              Excite! - <A href="http://www.excite.com/" 
+                              target=_blank><FONT 
+                              color=#0033cc>http://www.excite.com</FONT></A></SPAN></FONT></B><FONT 
+                              face=Geneva color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Geneva"><BR>The 
+                              most personalized portal on the 
+                              Web!</SPAN></FONT><FONT color=black size=2><SPAN 
+                              style="FONT-SIZE: 10pt; COLOR: black"> 
+                              <o:p></o:p></SPAN></FONT></P></DIV></TD></TR></TBODY></TABLE>
+                        <DIV 
+                        style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 5pt; PADDING-BOTTOM: 0in; BORDER-LEFT: orange 1.5pt solid; PADDING-TOP: 0in; BORDER-BOTTOM: medium none">
+                        <DIV class=MsoNormal 
+                        style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; MARGIN-LEFT: 5.25pt; BORDER-LEFT: medium none; MARGIN-RIGHT: 0.5in; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-padding-alt: 0in 0in 0in 5.0pt; mso-border-left-alt: solid orange 1.5pt" 
+                        align=center><FONT face="Times New Roman" color=black 
+                        size=2><SPAN style="FONT-SIZE: 10pt; COLOR: black">
+                        <HR align=center width="100%" SIZE=2>
+                        </SPAN></FONT></DIV>
+                        <P class=MsoNormal 
+                        style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; MARGIN-LEFT: 5.25pt; BORDER-LEFT: medium none; MARGIN-RIGHT: 0.5in; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-padding-alt: 0in 0in 0in 5.0pt; mso-border-left-alt: solid orange 1.5pt"><B><FONT 
+                        face=Geneva color=black size=2><SPAN 
+                        style="FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Geneva">Join 
+                        Excite! - <A href="http://www.excite.com/" 
+                        target=_blank><FONT 
+                        color=#0033cc>http://www.excite.com</FONT></A></SPAN></FONT></B><FONT 
+                        face=Geneva color=black size=2><SPAN 
+                        style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Geneva"><BR>The 
+                        most personalized portal on the Web!</SPAN></FONT><FONT 
+                        color=black size=2><SPAN 
+                        style="FONT-SIZE: 10pt; COLOR: black"> 
+                        <o:p></o:p></SPAN></FONT></P></DIV>
+                        <P 
+                        class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<FONT 
+                        face="Times New Roman" color=black size=3><SPAN 
+                        style="FONT-SIZE: 12pt; COLOR: black; mso-color-alt: windowtext"><o:p></o:p></SPAN></FONT></P></TD></TR></TBODY></TABLE>
+                  <DIV class=MsoNormal style="TEXT-ALIGN: center" 
+                  align=center><FONT face="Times New Roman" size=3><SPAN 
+                  style="FONT-SIZE: 12pt; COLOR: black">
+                  <HR align=center width="100%" SIZE=2>
+                  </SPAN></FONT></DIV>
+                  <P class=MsoNormal><B><FONT face=Geneva color=black 
+                  size=2><SPANSTYLE='FONT-SIZE:10.0PT;FONT-FAMILY:GENEVA;COLOR:BLACK;FONT-WEIGHT:BOLD'>JoinExcite! 
+                  - <A href="http://www.excite.com/" target=_blank><FONT 
+                  color=#0033cc>http://www.excite.com</FONT></A></SPAN></FONT></B><FONTSIZE=2 
+                  face="Geneva" color="black"><SPAN 
+                  style="FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Geneva"><BR>The 
+                  most personalized portal on the Web!</SPAN></FONT><FONT 
+                  color=black><SPANSTYLE='COLOR:BLACK'> </SPAN></FONT><FONT 
+                  color=black><SPAN 
+                  style="COLOR: black; mso-color-alt: windowtext"><o:p></o:p></SPAN></FONT></P></DIV>
+                  <P></FONT></P></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<FORM name=msg_action action=msg_proc.php method=post><INPUT type=hidden 
+value=4df1a8b3a7eb3331bc1a7ea9815b4ef2 name=ArdSI> <INPUT type=hidden 
+value=4df1a8b3a7eb3331bc1a7ea9815b4ef2 name=ArdSI> <INPUT type=hidden name=act> 
+<INPUT type=hidden name=url> <INPUT type=hidden value=0|1|1 name=m_back> <INPUT 
+type=hidden name=m_to> <INPUT type=hidden value=2270 name=mid> <INPUT 
+type=hidden name=indBS> <INPUT type=hidden name=pg> 
+</FORM></BASEFONT></BODY></HTML>

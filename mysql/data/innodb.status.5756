@@ -1,0 +1,68 @@
+
+=====================================
+040731 10:06:22 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 16 seconds
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 4, signal count 4
+Mutex spin waits 2, rounds 20, OS waits 1
+RW-shared spins 6, OS waits 3; RW-excl spins 0, OS waits 0
+------------
+TRANSACTIONS
+------------
+Trx id counter 0 2816
+Purge done for trx's n:o < 0 0 undo n:o < 0 0
+Total number of lock structs in row lock hash table 0
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: wait Windows aio (insert buffer thread)
+I/O thread 1 state: wait Windows aio (log thread)
+I/O thread 2 state: wait Windows aio (read thread)
+I/O thread 3 state: wait Windows aio (write thread)
+Pending normal aio reads: 0, aio writes: 0,
+ ibuf aio reads: 0, log i/o's: 0, sync i/o's: 0
+Pending flushes (fsync) log: 0; buffer pool: 0
+45 OS file reads, 4 OS file writes, 4 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf for space 0: size 1, free list len 0, seg size 2,
+0 inserts, 0 merged recs, 0 merges
+Hash table size 34679, used cells 0, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 0 43922
+Log flushed up to   0 43922
+Last checkpoint at  0 43922
+0 pending log writes, 0 pending chkp writes
+9 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total memory allocated 13547268; in additional pool allocated 171264
+Buffer pool size   512
+Free buffers       493
+Database pages     19
+Modified db pages  0
+Pending reads 0 
+Pending writes: LRU 0, flush list 0, single page 0
+Pages read 19, created 0, written 0
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+Main thread id 4784, state: waiting for server activity
+Number of rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================

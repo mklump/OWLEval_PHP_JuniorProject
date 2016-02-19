@@ -1,0 +1,102 @@
+041010 16:26:22  [NOTE] MySql: Normal shutdown
+
+041010 16:26:22  InnoDB: Starting shutdown...
+041010 16:26:23  InnoDB: Shutdown completed; log sequence number 0 43942
+041010 16:26:23  [NOTE] MySql: Shutdown complete
+
+041010 16:27:19  InnoDB: Started; log sequence number 0 43942
+041010 19:10:48  InnoDB: Started; log sequence number 0 43942
+041010 22:02:48  InnoDB: Started; log sequence number 0 43942
+041010 22:15:06  InnoDB: Started; log sequence number 0 43942
+041011  0:22:50  InnoDB: Started; log sequence number 0 43942
+041011  0:44:44  InnoDB: Started; log sequence number 0 43942
+041011  9:43:01  InnoDB: Started; log sequence number 0 43942
+041011 10:22:44  InnoDB: Started; log sequence number 0 43942
+041011 11:09:32  InnoDB: Started; log sequence number 0 43942
+041011 11:24:27  InnoDB: Started; log sequence number 0 43942
+041011 12:35:11  InnoDB: Started; log sequence number 0 43942
+InnoDB: You are downgrading from the multiple tablespace format of
+InnoDB: >= MySQL-4.1.1 back to the old format of MySQL-4.0.
+InnoDB:
+InnoDB: MAKE SURE that the mysqld server is idle, and purge and the insert
+InnoDB: buffer merge have run to completion under >= 4.1.1 before trying to
+InnoDB: downgrade! You can determine this by looking at SHOW INNODB STATUS:
+InnoDB: if the Main thread is 'waiting for server activity' and SHOW
+InnoDB: PROCESSLIST shows that you have ended all other connections
+InnoDB: to mysqld, then purge and the insert buffer merge have been
+InnoDB: completed.
+InnoDB: If you have already created tables in >= 4.1.1, then those
+InnoDB: tables cannot be used under 4.0.
+InnoDB: NOTE THAT this downgrade procedure has not been properly tested!
+InnoDB: The safe way to downgrade is to dump all InnoDB tables and recreate
+InnoDB: the whole tablespace.
+InnoDB: You are downgrading from an InnoDB version which allows multiple
+InnoDB: tablespaces. Wait that purge and insert buffer merge run to
+InnoDB: completion...
+InnoDB: Full purge and insert buffer merge completed.
+InnoDB: Downgraded from >= 4.1.1 to 4.0
+041011 13:29:58  InnoDB: Started
+041011 13:29:58 Fatal error: Can't open privilege tables: File 'C:\Documents and Settings\Matthew Klump\My Documents\Matts_Projects\mysql\share\charsets\?.conf' not found (Errcode: 22)
+041011 13:29:58 Aborting
+
+041011 13:29:58  InnoDB: Starting shutdown...
+041011 13:30:00  InnoDB: Shutdown completed
+041011 13:30:00 MySql: Shutdown Complete
+
+041011 13:30:50  InnoDB: Started
+041011 13:30:50 Fatal error: Can't open privilege tables: File 'C:\Documents and Settings\Matthew Klump\My Documents\Matts_Projects\mysql\share\charsets\?.conf' not found (Errcode: 22)
+041011 13:30:50 Aborting
+
+041011 13:30:50  InnoDB: Starting shutdown...
+041011 13:30:52  InnoDB: Shutdown completed
+041011 13:30:52 MySql: Shutdown Complete
+
+041011 13:31:19  InnoDB: Started
+041011 13:31:19 Fatal error: Can't open privilege tables: File 'C:\Documents and Settings\Matthew Klump\My Documents\Matts_Projects\mysql\share\charsets\?.conf' not found (Errcode: 22)
+041011 13:31:19 Aborting
+
+041011 13:31:19  InnoDB: Starting shutdown...
+041011 13:31:21  InnoDB: Shutdown completed
+041011 13:31:21 MySql: Shutdown Complete
+
+041011 13:33:18  InnoDB: Started
+041011 13:33:18 Fatal error: Can't open privilege tables: File 'C:\Documents and Settings\Matthew Klump\My Documents\Matts_Projects\mysql\share\charsets\?.conf' not found (Errcode: 22)
+041011 13:33:18 Aborting
+
+041011 13:33:18  InnoDB: Starting shutdown...
+041011 13:33:20  InnoDB: Shutdown completed
+041011 13:33:20 MySql: Shutdown Complete
+
+041011 13:34:29  InnoDB: Started
+041011 13:34:29 Fatal error: Can't open privilege tables: File 'C:\Documents and Settings\Matthew Klump\My Documents\Matts_Projects\mysql\share\charsets\?.conf' not found (Errcode: 22)
+041011 13:34:29 Aborting
+
+041011 13:34:29  InnoDB: Starting shutdown...
+041011 13:34:32  InnoDB: Shutdown completed
+041011 13:34:32 MySql: Shutdown Complete
+
+InnoDB: Resetting space id's in the doublewrite buffer
+041011 13:52:49  InnoDB: Started; log sequence number 0 43952
+InnoDB: You are upgrading to an InnoDB version which allows multiple
+InnoDB: tablespaces. Wait that purge and insert buffer merge run to
+InnoDB: completion...
+InnoDB: Full purge and insert buffer merge completed.
+InnoDB: You have now successfully upgraded to the multiple tablespaces
+InnoDB: format. You should NOT DOWNGRADE to an earlier version of
+InnoDB: InnoDB! But if you absolutely need to downgrade, see
+InnoDB: http://dev.mysql.com/doc/mysql/en/Multiple_tablespaces.html
+InnoDB: for instructions.
+041016  3:08:39  InnoDB: Started; log sequence number 0 43962
+041017 22:11:50  InnoDB: Started; log sequence number 0 43962
+041019 13:16:49  InnoDB: Started; log sequence number 0 43962
+041019 22:59:12  InnoDB: Started; log sequence number 0 43962
+041022 21:26:17  InnoDB: Started; log sequence number 0 43962
+041023  7:55:03  InnoDB: Started; log sequence number 0 43962
+041101  1:35:51  InnoDB: Started; log sequence number 0 43962
+041102  6:34:12  InnoDB: Started; log sequence number 0 43962
+041110  9:45:29  InnoDB: Started; log sequence number 0 43962
+041127  6:51:40  InnoDB: Started; log sequence number 0 43962
+041128 22:02:55  InnoDB: Started; log sequence number 0 43962
+041202  2:16:27  InnoDB: Started; log sequence number 0 43962
+041202 18:04:21  InnoDB: Started; log sequence number 0 43962
+041203  0:14:45  InnoDB: Started; log sequence number 0 43962
